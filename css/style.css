@@ -161,7 +161,7 @@ a:hover {
 }
 
 .poster__imagen {
-    width: 450px;
+    width: 400px;
     border-radius: 15px;
 
 }
@@ -171,11 +171,12 @@ a:hover {
     margin-top: 8em;
     text-align: center;
     border: dashed white 5px;
-    height: 18rem;
+    height: 17rem;
     border-radius: 15px;
     font-size: 1.3em;
-    width: 18rem;
+    width: 19rem;
     margin-left: 1em;
+ 
 
 
 }
@@ -304,7 +305,17 @@ a:hover {
 
 }
 
+.helado2{transform: translate(-15px);
+        animation-name: efecto1;
+        animation-iteration-count: 4;
+        animation-duration: 3s;
+        animation-delay:1s ;}
 
+@keyframes efecto1{
+0%{transform: translate(-15px);}
+50%{transform: translate(-15px,-25px);}
+100%{transform: translate(-15px,-30px);}
+}
 
 .spoti {
     width: 100%;
