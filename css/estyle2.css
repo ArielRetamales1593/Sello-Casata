@@ -12,7 +12,10 @@ html {
 }
 body{margin: 15rem;}
 
-header{background-image:url(../assets/img/textura-fondo-helado-color_495423-12976.jpg);}
+header{background-color: #feeeff;
+
+}
+
 
 
 article{display: flex;
