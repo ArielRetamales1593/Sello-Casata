@@ -1,0 +1,34 @@
+*::after,
+*::before,
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body{margin: 15rem;}
+
+header{background-image:url(../assets/img/textura-fondo-helado-color_495423-12976.jpg);}
+
+
+article{display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    
+    ;}
+
+    .info{display: flex;
+    
+    margin-top:3rem 
+    ;
+    flex-direction: row;
+    align-items: center;}
+h2{margin-top: 10rem ;margin-bottom: 10rem;}
+
+.video1{margin-top: 10em; background-color: black;} 
