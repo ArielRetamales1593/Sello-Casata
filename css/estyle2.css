@@ -44,7 +44,7 @@ color:black}
 li{color: black; }
 
 
-a:hover{color: black; border: dashed black 2.5px; border-radius: 15px ;
+a:hover{
 filter: brightness(200%);} 
 
 .mision{ margin-top: 20rem ; display: flex; align-items: center; justify-content: space-around; }
