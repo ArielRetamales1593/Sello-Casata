@@ -15,7 +15,9 @@ body{background-image: url(../assets/img/fondo/glossy\ paper\ wrinkled.jpeg)}
 
 
 
+p{font-size: 1.7em;}
 
+.textolog{font-size: 1.5em; text-align:end}
 
 article{display: flex;
     flex-direction: row;
@@ -116,16 +118,8 @@ section article{ width: 100%
     margin: 0;}
 
 
-.paralax{background: white fixed no-repeat 50% 50%;
+.banda2{flex-direction: row-reverse;}
 
-    background-size: cover;}
-
-    #section1{background-image: url(../assets/img/FARGO-PORTADA.jpg);}
-
-    #section2{background-image: url(../assets/img/FARGO-PORTADA.jpg);}
-
-    #section3{background-image: url(../assets/img/FARGO-PORTADA.jpg);}
-
-
+.ebnew{flex-direction: row-reverse;}
 
     
