@@ -11,115 +11,208 @@ html {
     font-size: 62.5%;
 }
 
-body{background-image: url(../assets/img/fondo/glossy\ paper\ wrinkled.jpeg)}
+body {
+    background-image: url(../assets/img/fondo/glossy\ paper\ wrinkled.jpeg)
+}
 
 
 
-p{font-size: 1.7em;}
+p {
+    font-size: 1.7em;
+}
 
-.textolog{font-size: 1.5em; text-align:end}
+.textolog {
+    font-size: 1.5em;
+    text-align: end
+}
 
-article{display: flex;
+article {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 15rem;
     margin-bottom: 15rem;
 
-    
-    ;}
 
-    .info{display: flex;
-    
-    margin-top:3rem 
     ;
+}
+
+.info {
+    display: flex;
+
+    margin-top: 3rem;
     flex-direction: row;
-    align-items: center;}
-h2{margin-top: 10rem ;margin-bottom: 15rem;}
+    align-items: center;
+}
+
+h2 {
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+}
 
 
 
 
 
-.nav-item{ font-size: 2em; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-color:black}
+.nav-item {
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black
+}
 
-li{color: black; }
-
-
-a:hover{
-filter: brightness(200%);} 
-
-.mision{ margin-top: 20rem ; display: flex; align-items: center; justify-content: space-around; }
-
-
-.imagenlog:hover{filter:brightness(150%);}
+li {
+    color: black;
+}
 
 
-.helado1{transform: translate(0px);
+a:hover {
+    filter: brightness(200%);
+}
+
+.mision {
+    margin-top: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.imagenlog:hover {
+    filter: brightness(150%);
+}
+
+
+.helado1 {
+    transform: translate(0px);
     animation-name: efecto1;
     animation-iteration-count: 1;
     animation-duration: 3s;
-    animation-delay:1s ;}
-
-@keyframes efecto1{
-0%{transform: translate(0px);}
-50%{transform: translate(0px,-25px);}
-100%{transform: translate(0px,-30px);}
+    animation-delay: 1s;
 }
 
-.helado2{transform: translate(0px);
+@keyframes efecto1 {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(0px, -25px);
+    }
+
+    100% {
+        transform: translate(0px, -30px);
+    }
+}
+
+.helado2 {
+    transform: translate(0px);
     animation-name: efecto1;
     animation-iteration-count: 1;
     animation-duration: 3s;
-    animation-delay: 5s ;}
-
-@keyframes efecto1{
-0%{transform: translate(0px);}
-50%{transform: translate(0px,-25px);}
-100%{transform: translate(0px,-30px);}
+    animation-delay: 5s;
 }
-.helado3{transform: translate(0px);
+
+@keyframes efecto1 {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(0px, -25px);
+    }
+
+    100% {
+        transform: translate(0px, -30px);
+    }
+}
+
+.helado3 {
+    transform: translate(0px);
     animation-name: efecto1;
     animation-iteration-count: 1;
     animation-duration: 3s;
-    animation-delay: 10s ;}
-
-@keyframes efecto1{
-0%{transform: translate(0px);}
-50%{transform: translate(0px,-25px);}
-100%{transform: translate(0px,-30px);}
+    animation-delay: 10s;
 }
 
-.helado4{transform: translate(0px);
+@keyframes efecto1 {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(0px, -25px);
+    }
+
+    100% {
+        transform: translate(0px, -30px);
+    }
+}
+
+.helado4 {
+    transform: translate(0px);
     animation-name: efecto1;
     animation-iteration-count: 1;
     animation-duration: 3s;
-    animation-delay: 15s ;}
-
-@keyframes efecto1{
-0%{transform: translate(0px);}
-50%{transform: translate(0px,-25px);}
-100%{transform: translate(0px,-30px);}
+    animation-delay: 15s;
 }
 
-.video1{
+@keyframes efecto1 {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(0px, -25px);
+    }
+
+    100% {
+        transform: translate(0px, -30px);
+    }
+}
+
+.video1 {
     display: flex;
     flex-direction: column;
-    
+
 
 }
-.video1__text{font-size: 5em; text-align: center;}
 
-.textoi{margin-left: 1rem;}
- 
-section article{ width: 100%
-    ; height: 100%
-; padding: 0;
-    margin: 0;}
+.video1__text {
+    font-size: 5em;
+    text-align: center;
+}
+
+.textoi {
+    margin-left: 1rem;
+}
+
+section article {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 
 
-.banda2{flex-direction: row-reverse;}
+.banda2 {
+    flex-direction: row-reverse;
+}
 
-.ebnew{flex-direction: row-reverse;}
+.ebnew {
+    flex-direction: row-reverse;
+}
 
-    
+.equipo {
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+form {
+    font-size: 2.5em;
+    align-items: center;
+}
+
+fieldset {
+    flex-direction: column;
+    align-items: center;
+}
