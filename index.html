@@ -11,6 +11,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Roboto:ital@1&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
     <link
     rel="stylesheet"
@@ -22,136 +39,314 @@
 </head>
 
 <body>
-    <div class="grid">
-        <header class="header" id="inicio">
-            <img class="header__logo" src="./assets/Logos/Asset 29.png" alt="">
+
+    <header class="container-fluid" id="inicio">
+
+        <div class="row">
+            <div class="col-sm- 12 my-3  text-center"> <a href="./index.html"> <img src="./assets/Logos/Asset 27.png"
+                        width="200px" alt="logo helado"></a>
+                <h1 class="text-center blockquote-footer my-2 "> Sello discografico</h1>
+            </div>
 
 
 
-        </header>
+    </header>
 
 
-        <nav class="navhead">
-            <ul>
-                <li> <a href="./index.html">Inicio </a> </li>
-                <li><a href="./assets/pages/artistas.html"> Artistas</a></li>
-                <li> <a href="./assets/pages/equipo.html">Equipo </a> </li>
-                <li> <a href="./assets/pages/novedades.html">Novedades </a> </li>
-                <li> <a href="./assets/pages/formulario.html">Contacto </a> </li>
-
-            </ul>
 
 
-        </nav>
+    <nav class="nav justify-content-center navbar navbar-light">
 
-        <div class="poster">
+        <ul class="nav justify-content-center navbar navbar-light">
+            <li class="nav-item">
+                <a class="nav-link active text-black " aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-black" aria-current="page"
+                    href="./assets/pages/artistas.html">Artistas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="./assets/pages/equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="./assets/pages/novedades.html">Novedades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="./assets/pages/formulario.html">Contacto</a>
+            </li>
 
 
-            <img class="helado2" src="./assets/Logos/Asset 30.png" width="50px" height="50px" alt="">
-            <img class="poster__imagen" src="./assets/img/FARGO-PORTADA.jpg" alt="">
-            <h2 class="poster__tex">Del fatalismo y la muerte: “Fargo”, el nuevo videoclip en stop-motion de Frucola
-                Frappé: </h2>
+        </ul>
+
+    </nav>
+
+
+    <div class="container-fluid w-75">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/imagen casata/1.png" width="" class="d-block w-100 .active" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/Posts Bandas/Idea Blanco/Poster Idea Blanco.png" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/Posts Bandas/Dejenme Dormir/poster dejenme dormir.png" class="d-block w-100"
+                        alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/img/Posts Bandas/Frucola/Poster CASATA X FRUCOLA.png" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/Posts Bandas/Estoy Bien/poster estoy bien.png" class="d-block w-100"
+                        alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <hr>
+        </div>
+
+    </div>
+
+
+    <h2 class="text-center display-4 titulo"> Sello Discográfico</h2>
+
+    <div class="container-fluid my-3">
+        <!-- cambiar display a columna para el responsive -->
+        <article class="mision">
+
+            <img class="img-fluid w-50 imagenlog" src="./assets/Logos/Asset 21.png" width="200px" alt="">
+            <p class="container-fluid lead textolog text-center "> Casata nace como un proyecto entre amigos con el
+                fin de crear una plataforma
+                musical informativa.
+                Con el tiempo la idea original muta a la creación de un sello discográfico independiente,
+                con el objetivo principal de generar un espacio para respaldar y dirigir el trabajo de artistas.
+                La principal motivación detrás de esto es la falta de espacios y oportunidades para musicxs que no
+                son
+                parte de un sello,
+                además, resolver problemas como la distribución digital y apoyar con creación de contenido
+                audiovisual
+                acorde a la propuesta
+                estética de la banda.
+
+            </p>
+
+
+            <div>
+
+
+
+
+                <img class="helado1" src="./assets/Logos/Asset 32.png" width="30px" alt="">
+                <img class="helado2" src="./assets/Logos/Asset 33.png" width="30px" alt="">
+                <img class="helado3" src="./assets/Logos/Asset 31.png" width="30px" alt="">
+                <img class="helado4" src="./assets/Logos/Asset 33.png" width="30px" alt="">
+
+            </div>
+
+
+
+
+    </div>
+
+
+
+
+    </article>
+    <!-- cambiar display a columna para el responsive -->
+
+    <h2 class="text-center display-3  titulo ">Nuevos Artistas <span
+            class="badge bg-secondary animate__animated animate__flash animate__infinite	infinite animate__slow	2s">New</span>
+    </h2>
+
+    <article class="nuevos-artistas container-fluid">
+        <div class="card col-5" style="width: 50rem;">
+            <img src="./assets/img/Posts Bandas/Idea Blanco/post 1 idea blanco.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fs-2 text-center">Idea Blanco</h5>
+                <p class="card-text text-center">Desde Talca con amor :3
+                </p>
+
+            </div>
         </div>
 
 
-        <section class="banda1">
-            <h3 class="banda1__text"> ‘Lo que intentamos hacer’, la visceral distorsión emocional de Estoy Bien en
-                su primer Ep</h3>
-            <iframe class="banda1__video" width="560" height="290" src="https://www.youtube.com/embed/Db2MHbkIUjk"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
 
 
-        </section>
-        <section class="banda2">
+        <div class="card col-5" style="width: 50rem;">
+            <img src="./assets/img/Posts Bandas/Dejenme Dormir/post 1 déjenme.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fs-2 text-center">Dejenme Dormir</h5>
+                <p class="card-text text-center">Lo nuevo del Indie Chileno .</p>
+
+            </div>
+        </div>
+    </article>
 
 
-            <section class="banda2__info">
+    <div class="video1 my-1 ">
 
-                <h2 class="banda2__Text"> Idea blanco se suma a la gira de Benjamin walker, luego de su retorno a Chile
-                </h2>
-
-
-                <img class="banda2__foto" src="./assets/img/IDEA.jpg" width="300px" alt="">
-            </section>
-
-
-
-
-        </section>
-        </section>
-        <section class="contenido">
-
-            <h2 class="contenido__titulo1"> Nuevo Artista "Dejenme Dormir" </h2>
-
-            <img class="contenido__foto" src="./assets/img/77.jpg" alt="">
-
-        </section>
-        <aside class="spoti">
-            <h2 class="animate__animated animate__tada animate__infinite "> nueva lista casata </h2>
-            <iframe width="60%" height="50%" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/977395657&color=%23885338&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/user-95769733" title="Ariel" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Ariel</a> ·
-                <a href="https://soundcloud.com/user-95769733/b-1" title="n)(maqueta)" target="_blank"
-                    style="color: #cccccc; text-decoration: none;"></a></div>
+        <div class="text-center mb-5" id="heladobajo">
+            <img class="helado1" src="./assets/Logos/Asset 32.png" width="50px" alt="">
             <img class="helado2" src="./assets/Logos/Asset 33.png" width="50px" alt="">
-
-        </aside>
-        <aside class="otro">
-            <img class="helado" src="./assets/Logos/Asset 32.png" width="150px" alt="">
-
-        </aside>
-        <footer class="footer">
+            <img class="helado3" src="./assets/Logos/Asset 31.png" width="50px" alt="">
+            <img class="helado4" src="./assets/Logos/Asset 33.png" width="50px" alt="">
 
 
 
+        </div>
+
+        <div>
 
 
 
+            <h2
+                class="text-center display-2  titulo animate__animated animate__flash animate__infinite	infinite animate__slow	2s">
+                Novedades <span class="badge bg-secondary">New</span></h2>
 
-            <nav class="footer__nav">
-                <div class="  animate__animated animate__flash animate__infinite"> Sello discografico</div>
-                <ul>
+            <article class="nov">
 
-                    <li><a href="./assets/pages/artistas.html"> Artistas</a></li>
-                    <li> <a href="./assets/pages/equipo.html">Equipo </a> </li>
-                    <li> <a href="./assets/pages/equipo.html">Mision </a> </li>
+                <div class="info "><img src="./assets/img/IDEA.jpg" class=" idea1" alt="...">
 
+                    <h2 class="text-center fs-3 mx-3 ideatext"> Idea blanco se suma a la gira de regreso de Benja Walker
+                    </h2>
 
-                </ul>
+                </div>
 
-
-
-
-                </ul>
-
-
-            </nav>
-            <nav class="footer__nav">
-                <div> Contacto</div>
-                <ul>
-
-                    <li><a href="./assets/pages/formulario.html"> Escribenos acá</a></li>
-                    <li> <a href="./assets/pages/formulario.html">Ubicacion </a> </li>
-                    <li> <a href="./assets/pages/formulario.html">Cotiza tu evento </a> </li>
-
-
-                </ul>
-
-
-            </nav>
+            </article>
 
 
 
 
 
-        </footer>
-    </div>
 
+
+
+
+
+
+
+
+
+            <div class="video1 my-5 ">
+                <h2 class="video1__text display-1 titulo "> Pronto nuevas noticias</h2>
+                <div class="text-center mb-5" id="heladobajo">
+                    <img class="helado1" src="./assets/Logos/Asset 32.png" width="50px" alt="">
+                    <img class="helado2" src="./assets/Logos/Asset 33.png" width="50px" alt="">
+                    <img class="helado3" src="./assets/Logos/Asset 31.png" width="50px" alt="">
+                    <img class="helado4" src="./assets/Logos/Asset 33.png" width="50px" alt="">
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="text-center ratio ratio-16x9 mb-1">
+
+
+                <video src="./assets/casata.mp4" controls></video>
+            </div>
+
+
+
+
+            <div class="container-fluid bg-black text-white text-center p-3 ">
+                <div class="row">
+
+                    <div class="col-4   ">
+                        <img class="img-logo ml-4" src="./assets/Logos/Asset 27.png" width="140px" alt="">
+
+
+
+
+
+                    </div>
+
+
+
+                    <div class="col-4 text-center ">
+                        <nav class="nav  d-flex my-5">
+
+                            <a class="nav-link text-white fs-2" href="./assets/pages/artistas.html">Artistas |</a>
+                            <a class="nav-link text-white  fs-2" href="./assets/pages/equipo.html">Equipo |</a>
+                            <a class="nav-link text-white  fs-2" href="./assets/pages/formulario.html"> Contacto | </a>
+                            <a class="nav-link text-white  fs-2" href="./assets/pages/equipo.html"> Sello</a>
+                        </nav>
+
+
+
+                    </div>
+
+
+
+
+
+                    <div class="col-4 my-5 ">
+                        <ul class="col-3 list-unstyled  ">
+                            <li class="d-flex">
+                                <a href="https://es-la.facebook.com/"> <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-facebook my-3 mx-3"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg></a>
+                                <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-instagram my-3 mx-3"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                    </svg> </a>
+                                <a href="https://www.tiktok.com/es/"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-tiktok my-3 mx-3"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" />
+                                    </svg></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                    crossorigin="anonymous">
+                </script>
 </body>
 
 </html>
