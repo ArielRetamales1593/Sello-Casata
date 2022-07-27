@@ -18,6 +18,10 @@
 .op:hover {
   filter: brightness(100%); }
 
+/*------------------ fontlogo-CRAYONETTE DJR------font----- Museo Sans-------
+color #498fad azul-----#86b4c8 celeste------#c2dae4 celeste claro----
+color #f95f95 rosado---- #fb94b8 rosado CLARO------#FDCADC  rosado pastel
+color # f6e050 amarill----#f9ea8a amarillo claro----#fcf5c5 amarillo pastel----------------------*/
 *::after,
 *::before,
 * {
@@ -53,6 +57,12 @@ p {
 
 .nov {
   display: flex; }
+  .nov.info {
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: row;
+    align-items: center;
+    background-color: #498fad; }
 
 .nuevos-artistas {
   display: flex;
@@ -67,7 +77,10 @@ p {
   display: flex;
   margin-top: 3rem;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  background-color: #498fad; }
+  .info.idea1 {
+    width: 600px; }
 
 .idea1 {
   width: 600px; }
@@ -163,7 +176,8 @@ section article {
 
 .equipo {
   justify-content: space-around;
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  background-color: #498fad; }
 
 form {
   font-size: 2.5em;

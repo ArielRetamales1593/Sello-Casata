@@ -1,6 +1,7 @@
 
 
 @import"_grillartistas.scss";
+@import "var.scss";
 
 
 *::after,
@@ -57,6 +58,15 @@ p {
 
 .nov {
     display: flex; 
+    &.info {
+        display: flex;
+    
+        margin-top: 3rem;
+        flex-direction: row;
+        align-items: center;
+        background-color: $color-primary;
+    }
+    
 }
 
 .nuevos-artistas {
@@ -77,6 +87,10 @@ p {
     margin-top: 3rem;
     flex-direction: row;
     align-items: center;
+    background-color: $color-primary;
+    &.idea1 {
+        width: 600px;
+    }
 }
 
 .idea1 {
@@ -216,6 +230,7 @@ section article {
 .equipo {
     justify-content: space-around;
     margin-top: 5rem;
+    background-color: $color-primary;
 }
 
 
