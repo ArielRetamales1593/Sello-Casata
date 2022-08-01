@@ -1,42 +1,7 @@
-
-
+@import "./misc/_variables";
+@import './misc/normalize';
 @import"_grillartistas.scss";
-@import "var.scss";
-
-
-*::after,
-*::before,
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-/*------------------ fontlogo-CRAYONETTE DJR------font----- Museo Sans-------
-color #498fad azul-----#86b4c8 celeste------#c2dae4 celeste claro----
-color #f95f95 rosado---- #fb94b8 rosado CLARO------#FDCADC  rosado pastel
-color # f6e050 amarill----#f9ea8a amarillo claro----#fcf5c5 amarillo pastel----------------------*/
-
-html {
-    font-size: 62.5%;
-}
-
-
-
-body {
-    background-image: url(../assets/img/fondo/tan-vintage-paper-texture-35.jpg);
-    font-family: 'Ubuntu', sans-serif
-}
-
-p {
-    font-size: 1.7em;
-}
-
-/*general*/
-
+@import './partials/header';
 
 
 .mision {
@@ -102,32 +67,7 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.nav-item {
-    font-size: 2em;
-    font-family: 'Ubuntu', sans-serif;
-    color: black;
-    margin-bottom: 5rem;
-    &.nav-item:hover {
-        border: outset 3px;
-        border-radius: 5px;
-        filter: brightness(100%);
-    }
-    
-    .nav-link:hover {
-        filter: brightness(200%);
-    }
 
-    ;
-}
-
-li {
-    color: black;
-
-}
-
-a:hover {
-    filter: brightness(200%);
-}
 
 .mision {
     margin-top: 20rem;
@@ -311,9 +251,6 @@ fieldset {
 
 
 
-
-
-
 /*tablet -*/
 
 
@@ -388,17 +325,7 @@ fieldset {
         flex-direction: column;
         align-items: center;
     }
-
-
-
-
-
 }
-
-
-
-
-
 
 /*celular*/
 @media(max-width:480px) {

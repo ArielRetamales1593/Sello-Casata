@@ -1,0 +1,26 @@
+.nav-item {
+    font-size: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    margin-bottom: 5rem;
+    &.nav-item:hover {
+        border: outset 3px;
+        border-radius: 5px;
+        filter: brightness(100%);
+    }
+    
+    .nav-link:hover {
+        filter: brightness(200%);
+    }
+
+    ;
+}
+
+li {
+    color: black;
+
+}
+
+a:hover {
+    filter: brightness(200%);
+}
