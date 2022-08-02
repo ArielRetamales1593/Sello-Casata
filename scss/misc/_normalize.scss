@@ -29,17 +29,16 @@ p {
 %borde {
     border-radius: 15px;
     border: solid black;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 10px 5px 5px gray;
 }
 
 .idea1 {
     @extend %borde
 }
 
-.card-img-top{
+.card-img-top {
     @extend %borde
 }
-
 
 h2 {
     margin-top: 2rem;
@@ -47,8 +46,6 @@ h2 {
 }
 
 /*animaciones*/
-
-
 .helado1 {
     transform: translate(0px);
     animation-name: efecto1;
@@ -95,7 +92,6 @@ h2 {
             transform: translate(0px, -30px);
         }
     }
-
 
     #heladobajo {
         margin: 8rem;

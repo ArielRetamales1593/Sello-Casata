@@ -30,7 +30,7 @@ p {
 .idea1, .card-img-top {
   border-radius: 15px;
   border: solid black;
-  box-shadow: 10px 5px 5px black; }
+  box-shadow: 10px 5px 5px gray; }
 
 h2 {
   margin-top: 2rem;
