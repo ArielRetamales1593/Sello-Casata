@@ -16,11 +16,10 @@
     ;
 }
 
-li {
-    color: black;
-
-}
 
 a:hover {
     filter: brightness(200%);
+}
+.imagenlog:hover {
+    filter: brightness(150%);
 }

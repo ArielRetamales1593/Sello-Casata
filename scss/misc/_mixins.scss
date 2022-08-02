@@ -7,6 +7,12 @@ justify-content: $justify;
 align-items: $align;
 }
 
+
+
+
+
+
+
 /* se utiliza con un @include en el scss master? y el nombre del mixin ej @include flex(row,justify,center)... si de casualidad no quieres dar un atributo
 
 a una clase poner none ej mixin($none,justify,center)*/ 

@@ -1,151 +1,72 @@
 @import "./misc/_variables";
 @import './misc/normalize';
-@import"_grillartistas.scss";
+@import"./views/grillartistas";
 @import './partials/header';
+@import './views/novedades.scss';
+@import './views/formulario.scss';
+@import './misc/_mediaquery.scss';
+@import './misc/mixins';
 
 
-.mision {
-    margin: 15rem;
-    &.textolog {
-        font-size: 1.5em;
-        text-align: end
-        
-    }
-    .imagenlog:hover {
-        filter: brightness(150%);
-    }
-    
-}
 
 .nuevosartistas {
     margin: 15rem;
 }
 
-.nov {
-    display: flex; 
-    &.info {
-        display: flex;
-    
-        margin-top: 3rem;
-        flex-direction: row;
-        align-items: center;
-        background-color: $color-primary;
-    }
-    
-}
 
-.nuevos-artistas {
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 15rem;
-    margin-bottom: 15rem;
-    & .card:hover{filter:brightness(140%)
-    }    
-    
-}
+
 
 .info {
-    display: flex;
-
-    margin-top: 3rem;
-    flex-direction: row;
-    align-items: center;
-    background-color: $color-primary;
-    &.idea1 {
-        width: 600px;
+        display: flex;
+        margin: 3rem;
+        @include flex(row, space-evenly, center);
+        
     }
-}
+
 
 .idea1 {
     width: 600px;
 }
 
-h2 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.nuevos-artistas {
+    @include flex(row, space-evenly, center);
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+
+    & .card:hover {
+        filter: brightness(140%)
+    }
+
 }
-
-
 
 .mision {
+    margin: 15rem;
     margin-top: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    @include flex(row, space-around, center);
+
+    &.textolog {
+        font-size: 1.5em;
+        text-align: end
+    }
 
 }
+
+
 
 .titulo:hover {
     border: outset 3px;
 }
 
-.nov {
-    margin: 15rem;
-}
-
-
-
-.helado1 {
-    transform: translate(0px);
-    animation-name: efecto1;
-    animation-iteration-count: 1;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    & .helado2 {
-        transform: translate(0px);
-        animation-name: efecto1;
-        animation-iteration-count: 1;
-        animation-duration: 3s;
-        animation-delay: 5s;
-    }
-    
-    
-    .helado3 {
-        transform: translate(0px);
-        animation-name: efecto1;
-        animation-iteration-count: 1;
-        animation-duration: 3s;
-        animation-delay: 10s;
-    }
-    
-    
-    .helado4 {
-        transform: translate(0px);
-        animation-name: efecto1;
-        animation-iteration-count: 1;
-        animation-duration: 3s;
-        animation-delay: 15s;
-    }
-    
-    @keyframes efecto1 {
-        0% {
-            transform: translate(0px);
-        }
-    
-        50% {
-            transform: translate(0px, -25px);
-        }
-    
-        100% {
-            transform: translate(0px, -30px);
-        }
-    }
-    
-    
-    
-}
-
-
 
 .video1 {
     display: flex;
     flex-direction: column;
+
     &.video1__text {
         font-size: 5em;
         text-align: center;
-    }}
+    }
+}
 
 .textoi {
     margin-left: 1rem;
@@ -172,174 +93,4 @@ section article {
     margin-top: 5rem;
     background-color: $color-primary;
 }
-
-
-
-
-form {
-    font-size: 2.5em;
-    align-items: center;
-}
-
-fieldset {
-    flex-direction: column;
-    align-items: center;
-}
-
-.fargo {
-    margin: 15rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &.poster {
-        width: 800px;
-    }
-    
-    .textofargo {
-        text-align: justify center;
-        display: flex;
-        margin-bottom: 2rem;
-        flex-direction: column;
-        align-items: center;
-        font-weight: bold;
-    }
-    
-    .textofargo2 {
-        text-align: justify;
-        margin-top: 1rem;
-    
-    }
-}
-
-
-.ideablanco {
-    margin: 15rem;
-    &.textoi {
-        font-weight: bold;
-        margin-bottom: 2rem;
-    }
-    
-    .textoi2 {
-        text-align: justify;
-        margin-bottom: 2rem;
-    }
-    
-    .ideatext {
-        font-weight: bold;
-    }
-}
-
-
-.estoybien {
-    display: flex;
-    margin: 15rem;
-    flex-direction: column;
-    &.estoytext {
-        font-weight: bold;
-    
-    }
-    
-    .estoytext2 {
-        text-align: justify;
-    }
-}
-
-#heladobajo {
-    margin: 8rem;
-}
-
-
-
-
-/*tablet -*/
-
-
-@media(max-width:823px) {
-
-    .mision {
-        flex-direction: column;
-    }
-
-    .nuevos-artistas {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .idea1 {
-        width: 400px;
-    }
-
-    .textofargo {
-        text-align: center;
-    }
-
-
-
-
-
-    @media(max-width:550px) {
-
-
-
-        .fargo {
-            margin: 5rem;
-        }
-
-        .ideablanco {
-            margin: 5rem;
-        }
-
-        .estoybien {
-            margin: 5rem;
-        }
-
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-}
-
-
-
-@media(max-width:789px) {
-    .info {
-        flex-direction: column;
-    }
-
-    .mision {
-        margin: 5rem;
-
-
-    }
-
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/*celular*/
-@media(max-width:480px) {
-
-
-
-    .nov {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    ul {
-        flex-direction: column;
-    }
-
-
-}
+/* extend*/

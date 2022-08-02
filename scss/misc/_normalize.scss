@@ -1,26 +1,103 @@
 /* importar fuente*/
 @import url(https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Roboto:ital@1&family=Ubuntu&display=swap);
 
-
 *::after,
 *::before,
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
-
-
-html{
-    font-size: 62.5%;
+    box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
 
 body {
     background-image: url(../assets/img/fondo/tan-vintage-paper-texture-35.jpg);
     font-family: 'Ubuntu', sans-serif
 }
-    
+
 p {
     font-size: 1.7em;
 }
 
+.titulo:hover {
+    border: outset 3px;
+}
+
+%borde {
+    border-radius: 15px;
+    border: solid black;
+    box-shadow: 10px 5px 5px black;
+}
+
+.idea1 {
+    @extend %borde
+}
+
+.card-img-top{
+    @extend %borde
+}
+
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*animaciones*/
+
+
+.helado1 {
+    transform: translate(0px);
+    animation-name: efecto1;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+
+    & .helado2 {
+        transform: translate(0px);
+        animation-name: efecto1;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        animation-delay: 5s;
+    }
+
+
+    .helado3 {
+        transform: translate(0px);
+        animation-name: efecto1;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        animation-delay: 10s;
+    }
+
+
+    .helado4 {
+        transform: translate(0px);
+        animation-name: efecto1;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        animation-delay: 15s;
+    }
+
+    @keyframes efecto1 {
+        0% {
+            transform: translate(0px);
+        }
+
+        50% {
+            transform: translate(0px, -25px);
+        }
+
+        100% {
+            transform: translate(0px, -30px);
+        }
+    }
+
+
+    #heladobajo {
+        margin: 8rem;
+    }
+}
