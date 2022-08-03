@@ -36,6 +36,14 @@ h2 {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
+h1 {
+  font-size: 4em;
+  text-align: center;
+  background: #ccc;
+  background: radial-gradient(#498fad, white);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
+
 /*animaciones*/
 .helado1 {
   transform: translate(0px);
@@ -111,6 +119,7 @@ a:hover {
   filter: brightness(150%); }
 
 /*encapsular codigo para ahorrar*/
+/* hacer un mixin para titulos*/
 /* se utiliza con un @include en el scss master? y el nombre del mixin ej @include flex(row,justify,center)... si de casualidad no quieres dar un atributo
 
 a una clase poner none ej mixin($none,justify,center)*/
@@ -199,6 +208,7 @@ fieldset {
     flex-direction: column; } }
 
 /*encapsular codigo para ahorrar*/
+/* hacer un mixin para titulos*/
 /* se utiliza con un @include en el scss master? y el nombre del mixin ej @include flex(row,justify,center)... si de casualidad no quieres dar un atributo
 
 a una clase poner none ej mixin($none,justify,center)*/
