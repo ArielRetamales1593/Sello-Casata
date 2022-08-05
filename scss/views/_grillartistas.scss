@@ -1,3 +1,7 @@
+
+
+@import"../misc/mediaquery";
+
 .carru {
     width: 500px;
 }
@@ -14,16 +18,48 @@
     grid-auto-rows: 550px;
     gap: 5px;
 
-    & item {
-        display: flex;
-        align-items: center;
-
-        justify-content: center;
-
-
+ 
     }
 
+
+
+.dj{display: flex;
+    align-items: center;
+    margin-bottom: 15rem;
 }
+.fotodj{width: 45%;}
+
+.textodj{
+margin: 5rem;
+}
+
+.disco_dj{display: flex ;
+    background-image: url(../../assets/img/fondo/);
+
+justify-content: center;
+
+margin-bottom: 15rem;
+}
+
+
+
+
+.disco_eb{display: flex; 
+justify-content: space-around;}
+
+
+.eb{display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 5rem;
+}
+.fotoeb{width: 45%;}
+
+.textoeb{
+margin: 5rem;
+}
+
+
 
 
 .op {

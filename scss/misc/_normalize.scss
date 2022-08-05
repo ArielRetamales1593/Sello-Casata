@@ -1,8 +1,7 @@
 /* importar fuente*/
 @import url(https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Roboto:ital@1&family=Ubuntu&display=swap);
 
-*::after,
-*::before,
+
 * {
     margin: 0;
     padding: 0;
@@ -48,45 +47,45 @@ h2 {
 h1{ font-size: 4em; text-align: center; 
     background: #ccc ;
     background :radial-gradient($color-primary,white) ;
+  margin-top: 8rem;
     
     -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;   
  }
+
 /*animaciones*/
 .helado1 {
     transform: translate(0px);
     animation-name: efecto1;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     animation-duration: 3s;
     animation-delay: 1s;
-
-    & .helado2 {
+    
+}
+@keyframes efecto1 {
+    0% {
         transform: translate(0px);
-        animation-name: efecto1;
-        animation-iteration-count: 1;
+    }
+
+    50% {
+        transform: translate(0px, -25px);
+    }
+
+    100% {
+        transform: translate(0px, -30px);
+    }
+}
+
+
+    .helado2 {
+        transform: translate(0px);
+        animation-name: efecto2;
+        animation-iteration-count: infinite;
         animation-duration: 3s;
         animation-delay: 5s;
     }
 
-
-    .helado3 {
-        transform: translate(0px);
-        animation-name: efecto1;
-        animation-iteration-count: 1;
-        animation-duration: 3s;
-        animation-delay: 10s;
-    }
-
-
-    .helado4 {
-        transform: translate(0px);
-        animation-name: efecto1;
-        animation-iteration-count: 1;
-        animation-duration: 3s;
-        animation-delay: 15s;
-    }
-
-    @keyframes efecto1 {
+    @keyframes efecto2 {
         0% {
             transform: translate(0px);
         }
@@ -100,7 +99,65 @@ h1{ font-size: 4em; text-align: center;
         }
     }
 
+
+    .helado3 {
+        transform: translate(0px);
+        animation-name: efecto3;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-delay: 10s;
+    }
+    @keyframes efecto3 {
+        0% {
+            transform: translate(0px);
+        }
+
+        50% {
+            transform: translate(0px, -25px);
+        }
+
+        100% {
+            transform: translate(0px, -30px);
+        }
+    }
+
+
+
+    .helado4 {
+        transform: translate(0px);
+        animation-name: efecto4;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-delay: 15s;
+    }
+
+
+
+    @keyframes efecto4 {
+        0% {
+            transform: translate(0px);
+        }
+
+        50% {
+            transform: translate(0px, -25px);
+        }
+
+        100% {
+            transform: translate(0px, -30px);
+        }
+    }
+
+    
+
+
+
+
+
+
+
+
+    
+
     #heladobajo {
         margin: 8rem;
     }
-}

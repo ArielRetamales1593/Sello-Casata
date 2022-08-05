@@ -14,6 +14,20 @@
 }
 
 
+.carrusel1{width: 60%; 
+ 
+    box-shadow: 10px 5px 5px gray;
+}
+.d-block{width: 100%
+    ;
+  height: 800px;
+margin-left: auto;
+margin-right: auto;}
+
+
+
+
+
 
 
 .info {
@@ -41,12 +55,12 @@
 
 .mision {
     margin: 15rem;
-    margin-top: 20rem;
-    @include flex(row, space-around, center);
+    margin-top: 6rem;
+    @include flex(row, none, center);
 
     &.textolog {
         font-size: 1.5em;
-        text-align: end
+        margin: 4rem;   
     }
 
 }
@@ -92,3 +106,105 @@ section article {
     background-color: $color-primary;
 }
 /* extend*/
+
+
+/*tablet -*/
+
+
+@media(max-width:823px) {
+
+    .mision {
+        flex-direction: column;
+    }
+
+    .nuevos-artistas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .idea1 {
+        width: 400px;
+    }
+
+    .textofargo {
+        text-align: center;
+    }
+
+
+    @media(max-width:550px) {
+
+
+
+        .fargo {
+            margin: 5rem;
+        }
+
+        .ideablanco {
+            margin: 5rem;
+        }
+
+        .estoybien {
+            margin: 5rem;
+        }
+
+    }
+
+
+
+}
+
+@media(max-width:789px) {
+    .info {
+        flex-direction: column;
+    }
+
+    .mision {
+        margin: 5rem;
+
+
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*celular*/
+@media(max-width:480px) {
+
+
+
+    .nov {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+
+    .nuevos-artistas {
+        @include flex(column, none, center);
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+    
+        & .card:hover {
+            filter: brightness(140%)
+        }
+
+
+        .tarj{width: 35rem;}
+
+        
+    }
+    
+
+
+
+
+
+}
