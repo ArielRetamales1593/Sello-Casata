@@ -20,7 +20,8 @@ body {
   font-family: 'Ubuntu', sans-serif; }
 
 p {
-  font-size: 1.7em; }
+  font-size: 1.5em;
+  text-align: justify; }
 
 .titulo:hover {
   border: outset 3px; }
@@ -47,7 +48,7 @@ h1 {
 .helado1 {
   transform: translate(0px);
   animation-name: efecto1;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-duration: 3s;
   animation-delay: 1s; }
 
@@ -62,7 +63,7 @@ h1 {
 .helado2 {
   transform: translate(0px);
   animation-name: efecto2;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-duration: 3s;
   animation-delay: 5s; }
 
@@ -77,7 +78,7 @@ h1 {
 .helado3 {
   transform: translate(0px);
   animation-name: efecto3;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-duration: 3s;
   animation-delay: 10s; }
 
@@ -92,7 +93,7 @@ h1 {
 .helado4 {
   transform: translate(0px);
   animation-name: efecto4;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-duration: 3s;
   animation-delay: 15s; }
 
@@ -108,6 +109,11 @@ h1 {
   margin: 8rem; }
 
 /*tablet -*/
+/*encapsular codigo para ahorrar*/
+/* hacer un mixin para titulos*/
+/* se utiliza con un @include en el scss master? y el nombre del mixin ej @include flex(row,justify,center)... si de casualidad no quieres dar un atributo
+
+a una clase poner none ej mixin($none,justify,center)*/
 @media (max-width: 1200px) {
   .grid {
     justify-items: center;
@@ -128,7 +134,7 @@ h1 {
   .textofargo {
     text-align: center; } }
 
-@media (max-width: 823px) and (max-width: 789px) {
+@media (max-width: 789px) {
   .info {
     flex-direction: column; }
   .mision {
@@ -137,7 +143,7 @@ h1 {
     flex-direction: column;
     align-items: center; } }
 
-@media (max-width: 823px) and (max-width: 550px) {
+@media (max-width: 550px) {
   .fargo {
     margin: 5rem; }
   .ideablanco {
@@ -145,20 +151,16 @@ h1 {
   .estoybien {
     margin: 5rem; } }
 
-@media (max-width: 823px) {
-  .dj {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15rem;
-    flex-direction: column; }
-  .fotodj {
-    width: 100%; }
-  .eb {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-  .fotoeb {
-    width: 100%; } }
+.dj {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rem;
+  flex-direction: column; }
+
+.eb {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
 
 /*celular*/
 @media (max-width: 480px) {
@@ -173,6 +175,29 @@ h1 {
     margin-bottom: 15rem;
     flex-direction: column; }
   .fotodj {
+    width: 100%; } }
+
+/*celular*/
+@media (max-width: 480px) {
+  .nov {
+    justify-content: center;
+    flex-direction: column; }
+  ul {
+    flex-direction: column; }
+  .nuevos-artistas {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    margin-left: auto;
+    margin-right: auto; }
+    .nuevos-artistas .card:hover {
+      filter: brightness(140%); }
+    .nuevos-artistas .tarj {
+      width: 35rem; }
+  .fotoeb {
     width: 100%; } }
 
 /*celular*/
@@ -206,13 +231,13 @@ h1 {
 
 .disco_dj {
   display: flex;
-  background-image: url(../../assets/img/fondo/);
   justify-content: center;
   margin-bottom: 15rem; }
 
 .disco_eb {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background-color: black; }
 
 .eb {
   display: flex;
@@ -231,6 +256,9 @@ h1 {
 
 .op:hover {
   filter: brightness(100%); }
+
+.disco {
+  text-align: center; }
 
 .nav-item {
   font-size: 2em;
@@ -261,8 +289,8 @@ a una clase poner none ej mixin($none,justify,center)*/
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center; }
-  .fargo.poster {
-    width: 800px; }
+  .fargo .poster {
+    width: 600px; }
   .fargo .textofargo {
     text-align: justify center;
     display: flex;
@@ -284,25 +312,38 @@ a una clase poner none ej mixin($none,justify,center)*/
     margin-bottom: 2rem; }
   .ideablanco .ideatext {
     font-weight: bold; }
+  .ideablanco .fotoidea {
+    width: 400px; }
 
 .estoybien {
   display: flex;
   margin: 15rem;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
   .estoybien.estoytext {
     font-weight: bold; }
   .estoybien .estoytext2 {
     text-align: justify; }
+  .estoybien .fotoestoybien {
+    width: 540px; }
 
 form {
   font-size: 2.5em;
-  align-items: center; }
+  align-items: stretch;
+  display: flex;
+  flex-direction: column; }
 
 fieldset {
   flex-direction: column;
-  align-items: center; }
+  align-items: stretch;
+  margin: auto; }
 
 /*tablet -*/
+/*encapsular codigo para ahorrar*/
+/* hacer un mixin para titulos*/
+/* se utiliza con un @include en el scss master? y el nombre del mixin ej @include flex(row,justify,center)... si de casualidad no quieres dar un atributo
+
+a una clase poner none ej mixin($none,justify,center)*/
 @media (max-width: 1200px) {
   .grid {
     justify-items: center;
@@ -323,7 +364,7 @@ fieldset {
   .textofargo {
     text-align: center; } }
 
-@media (max-width: 823px) and (max-width: 789px) {
+@media (max-width: 789px) {
   .info {
     flex-direction: column; }
   .mision {
@@ -332,7 +373,7 @@ fieldset {
     flex-direction: column;
     align-items: center; } }
 
-@media (max-width: 823px) and (max-width: 550px) {
+@media (max-width: 550px) {
   .fargo {
     margin: 5rem; }
   .ideablanco {
@@ -340,20 +381,16 @@ fieldset {
   .estoybien {
     margin: 5rem; } }
 
-@media (max-width: 823px) {
-  .dj {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15rem;
-    flex-direction: column; }
-  .fotodj {
-    width: 100%; }
-  .eb {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-  .fotoeb {
-    width: 100%; } }
+.dj {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rem;
+  flex-direction: column; }
+
+.eb {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
 
 /*celular*/
 @media (max-width: 480px) {
@@ -371,6 +408,29 @@ fieldset {
     width: 100%; } }
 
 /*celular*/
+@media (max-width: 480px) {
+  .nov {
+    justify-content: center;
+    flex-direction: column; }
+  ul {
+    flex-direction: column; }
+  .nuevos-artistas {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    margin-left: auto;
+    margin-right: auto; }
+    .nuevos-artistas .card:hover {
+      filter: brightness(140%); }
+    .nuevos-artistas .tarj {
+      width: 35rem; }
+  .fotoeb {
+    width: 100%; } }
+
+/*celular*/
 @media (max-width: 400px) {
   .nov {
     justify-content: center;
@@ -384,7 +444,7 @@ fieldset {
 
 a una clase poner none ej mixin($none,justify,center)*/
 .nuevosartistas {
-  margin: 15rem; }
+  margin: 5rem; }
 
 .carrusel1 {
   width: 60%;
@@ -395,6 +455,10 @@ a una clase poner none ej mixin($none,justify,center)*/
   height: 800px;
   margin-left: auto;
   margin-right: auto; }
+
+.contenedorform {
+  width: 100%;
+  height: 600px; }
 
 .info {
   display: flex;
@@ -425,8 +489,8 @@ a una clase poner none ej mixin($none,justify,center)*/
   justify-content: none;
   align-items: center; }
   .mision.textolog {
-    font-size: 1.5em;
-    margin: 4rem; }
+    font-size: 1.2em;
+    text-align: justify; }
 
 .titulo:hover {
   border: outset 3px; }
@@ -456,7 +520,7 @@ section article {
 .equipo {
   justify-content: space-around;
   margin-top: 5rem;
-  background-color: #498fad; }
+  margin-bottom: 15rem; }
 
 /* extend*/
 /*tablet -*/
@@ -478,33 +542,3 @@ section article {
     margin: 5rem; }
   .estoybien {
     margin: 5rem; } }
-
-@media (max-width: 789px) {
-  .info {
-    flex-direction: column; }
-  .mision {
-    margin: 5rem; }
-  .row {
-    flex-direction: column;
-    align-items: center; } }
-
-/*celular*/
-@media (max-width: 480px) {
-  .nov {
-    justify-content: center;
-    flex-direction: column; }
-  ul {
-    flex-direction: column; }
-  .nuevos-artistas {
-    display: flex;
-    flex-direction: column;
-    justify-content: none;
-    align-items: center;
-    margin-top: 15rem;
-    margin-bottom: 15rem;
-    margin-left: auto;
-    margin-right: auto; }
-    .nuevos-artistas .card:hover {
-      filter: brightness(140%); }
-    .nuevos-artistas .tarj {
-      width: 35rem; } }

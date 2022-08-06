@@ -34,7 +34,6 @@ margin: 5rem;
 }
 
 .disco_dj{display: flex ;
-    background-image: url(../../assets/img/fondo/);
 
 justify-content: center;
 
@@ -45,7 +44,8 @@ margin-bottom: 15rem;
 
 
 .disco_eb{display: flex; 
-justify-content: space-around;}
+justify-content: space-around;
+background-color: black;}
 
 
 .eb{display: flex;
@@ -70,3 +70,5 @@ margin: 5rem;
 .op:hover {
     filter: brightness(100%);
 }
+
+.disco{text-align: center;}

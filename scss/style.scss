@@ -10,7 +10,7 @@
 
 
 .nuevosartistas {
-    margin: 15rem;
+    margin: 5rem;
 }
 
 
@@ -24,10 +24,7 @@
 margin-left: auto;
 margin-right: auto;}
 
-
-
-
-
+.contenedorform{width: 100%; height: 600px;}
 
 
 .info {
@@ -59,8 +56,8 @@ margin-right: auto;}
     @include flex(row, none, center);
 
     &.textolog {
-        font-size: 1.5em;
-        margin: 4rem;   
+        font-size: 1.2em;
+      text-align: justify; 
     }
 
 }
@@ -103,7 +100,8 @@ section article {
 .equipo {
     justify-content: space-around;
     margin-top: 5rem;
-    background-color: $color-primary;
+    margin-bottom: 15rem;
+    
 }
 /* extend*/
 
@@ -149,62 +147,5 @@ section article {
 
     }
 
-
-
 }
 
-@media(max-width:789px) {
-    .info {
-        flex-direction: column;
-    }
-
-    .mision {
-        margin: 5rem;
-
-
-    }
-
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/*celular*/
-@media(max-width:480px) {
-
-
-
-    .nov {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    ul {
-        flex-direction: column;
-    }
-
-
-    .nuevos-artistas {
-        @include flex(column, none, center);
-        margin-top: 15rem;
-        margin-bottom: 15rem;
-        margin-left: auto;
-        margin-right: auto;
-    
-        & .card:hover {
-            filter: brightness(140%)
-        }
-
-
-        .tarj{width: 35rem;}
-
-        
-    }
-    
-
-
-
-
-
-}
