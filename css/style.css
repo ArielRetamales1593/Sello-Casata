@@ -5,8 +5,17 @@ color # f6e050 amarill----#f9ea8a amarillo claro----#fcf5c5 amarillo pastel-----
 /*spacing*/
 /*font-family*/
 /*font-size*/
-/* importar fuente*/
 @import url(https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Roboto:ital@1&family=Ubuntu&display=swap);
+h1 {
+  font-size: 4em;
+  text-align: center;
+  background: #ccc;
+  background: radial-gradient(#498fad, white);
+  margin-top: 8rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
+
+/* importar fuente*/
 * {
   margin: 0;
   padding: 0;
@@ -34,15 +43,6 @@ p {
 h2 {
   margin-top: 2rem;
   margin-bottom: 2rem; }
-
-h1 {
-  font-size: 4em;
-  text-align: center;
-  background: #ccc;
-  background: radial-gradient(#498fad, white);
-  margin-top: 8rem;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text; }
 
 /*animaciones*/
 .helado1 {
@@ -208,12 +208,11 @@ a una clase poner none ej mixin($none,justify,center)*/
   ul {
     flex-direction: column; } }
 
-.carru {
-  width: 500px; }
+main {
+  margin: 15rem; }
 
 .grid {
   display: grid;
-  margin: 5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: 550px;
   gap: 5px; }
@@ -283,8 +282,10 @@ a:hover {
 /* se utiliza con un @include en el scss master? y el nombre del mixin ej @include flex(row,justify,center)... si de casualidad no quieres dar un atributo
 
 a una clase poner none ej mixin($none,justify,center)*/
+main {
+  margin: 10rem; }
+
 .fargo {
-  margin: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -438,23 +439,20 @@ a una clase poner none ej mixin($none,justify,center)*/
   ul {
     flex-direction: column; } }
 
-/*encapsular codigo para ahorrar*/
-/* hacer un mixin para titulos*/
-/* se utiliza con un @include en el scss master? y el nombre del mixin ej @include flex(row,justify,center)... si de casualidad no quieres dar un atributo
-
-a una clase poner none ej mixin($none,justify,center)*/
 .nuevosartistas {
   margin: 5rem; }
 
-.carrusel1 {
-  width: 60%;
-  box-shadow: 10px 5px 5px gray; }
+.navbar {
+  position: sticky;
+  top: 0%; }
 
 .d-block {
   width: 100%;
-  height: 800px;
-  margin-left: auto;
-  margin-right: auto; }
+  height: 900px;
+  filter: brightness(65%); }
+
+.d-block:hover {
+  filter: brightness(100%); }
 
 .contenedorform {
   width: 100%;
@@ -517,28 +515,8 @@ section article {
 .ebnew {
   flex-direction: row-reverse; }
 
-.equipo {
-  justify-content: space-around;
-  margin-top: 5rem;
-  margin-bottom: 15rem; }
+/*encapsular codigo para ahorrar*/
+/* hacer un mixin para titulos*/
+/* se utiliza con un @include en el scss master? y el nombre del mixin ej @include flex(row,justify,center)... si de casualidad no quieres dar un atributo
 
-/* extend*/
-/*tablet -*/
-@media (max-width: 823px) {
-  .mision {
-    flex-direction: column; }
-  .nuevos-artistas {
-    flex-direction: column;
-    align-items: center; }
-  .idea1 {
-    width: 400px; }
-  .textofargo {
-    text-align: center; } }
-
-@media (max-width: 823px) and (max-width: 550px) {
-  .fargo {
-    margin: 5rem; }
-  .ideablanco {
-    margin: 5rem; }
-  .estoybien {
-    margin: 5rem; } }
+a una clase poner none ej mixin($none,justify,center)*/

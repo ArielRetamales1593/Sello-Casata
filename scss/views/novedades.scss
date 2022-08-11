@@ -1,8 +1,10 @@
 @import '../misc/mixins';
 
+main{margin: 10rem;}
+
 .fargo {
-    margin: 15rem;
-    @include flex(column, space-evenly, center);
+   
+    @include flex(column, space-evenly, center); 
 
 
 
