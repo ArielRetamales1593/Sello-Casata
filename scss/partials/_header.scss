@@ -3,6 +3,7 @@
     font-family: 'Ubuntu', sans-serif;
     color: black;
     margin-bottom: 5rem;
+    margin: 1rem;
     &.nav-item:hover {
         border: outset 3px;
         border-radius: 5px;
@@ -15,7 +16,7 @@
 
     ;
 }
-
+ul{margin-top: 2rem;}
 
 a:hover {
     filter: brightness(200%);
@@ -23,3 +24,15 @@ a:hover {
 .imagenlog:hover {
     filter: brightness(150%);
 }
+
+
+
+.img-logo{width: 150px;
+margin-right: auto;
+margin-left: 2rem;
+margin-top: 1rem;
+
+}
+
+.navbar{display: flex;}
+.header{display: flex; }

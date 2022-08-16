@@ -1,10 +1,15 @@
+
+@import '../misc/_mediaquery';
+
+
+
 .nuevosartistas {
     margin: 5rem;
 }
 
 
 
-
+.navflex{display: flex ;}
 
 
 
@@ -83,4 +88,36 @@ section article {
 
 .ebnew {
     flex-direction: row-reverse;
-}
+}    
+
+.container {
+
+    margin-top: 5rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr  ; 
+    gap: 0px 0px; 
+
+
+    }
+
+
+      .ig{width: 100%; 
+    
+border-radius: 5px;}
+
+
+    .amarillo{margin-top: 12%; filter: grayscale(50%);}
+    
+    .amarillo:hover{filter: grayscale(0%) brightness(120%);
+    
+    
+    
+    }
+    
+    
+    
+
+
+
+    

@@ -4,10 +4,10 @@
 @import './partials/header';
 @import './views/novedades.scss';
 @import './views/formulario.scss';
-@import './misc/_mediaquery.scss';
-@import './views/home';
-@import './misc/mixins';
 
+@import './views/_home.scss';
+@import './misc/mixins.scss';
+@import './misc/mediaquery'
 
 
 
