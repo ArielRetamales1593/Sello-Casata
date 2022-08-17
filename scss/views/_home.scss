@@ -45,15 +45,6 @@
 
 }
 
-.mision {
-    margin: 15rem;
-    margin-top: 6rem;
-    @include flex(row, none, center);
-
-    &.textolog {
-        font-size: 1.2em;
- 
-}}
 
 
 .titulo:hover {
@@ -107,7 +98,7 @@ section article {
 border-radius: 5px;}
 
 
-    .amarillo{margin-top: 12%; filter: grayscale(50%);}
+    .amarillo{margin-top: 12%; filter: grayscale(50%); border-radius: 20px;}
     
     .amarillo:hover{filter: grayscale(0%) brightness(120%);
     
@@ -116,8 +107,12 @@ border-radius: 5px;}
     }
     
     
+    .mas{display: flex; justify-content: center; margin-top: 15rem;}
+.infotitulo{font-size:3em;}
     
 
 
 
-    
+ .boton{display: flex; align-items: center; justify-content: center; } 
+
+ .btn{ font-size: 1.9em;  margin-bottom: 15rem;} 

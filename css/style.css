@@ -6,6 +6,7 @@ color # f6e050 amarill----#f9ea8a amarillo claro----#fcf5c5 amarillo pastel-----
 /*font-family*/
 /*font-size*/
 @import url(https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Roboto:ital@1&family=Ubuntu&display=swap);
+@import url(/scss/misc/_mixins.scss);
 h1 {
   font-size: 4em;
   text-align: center;
@@ -164,13 +165,7 @@ a una clase poner none ej mixin($none,justify,center)*/
 .dj {
   display: flex;
   align-items: center;
-  margin-bottom: 15rem;
-  flex-direction: column; }
-
-.eb {
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
+  margin-bottom: 15rem; }
 
 /*celular*/
 @media (max-width: 480px) {
@@ -218,47 +213,68 @@ a una clase poner none ej mixin($none,justify,center)*/
   ul {
     flex-direction: column; } }
 
-main {
-  margin: 15rem; }
+/*encapsular codigo para ahorrar*/
+/* hacer un mixin para titulos*/
+/* se utiliza con un @include en el scss master? y el nombre del mixin ej @include flex(row,justify,center)... si de casualidad no quieres dar un atributo
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 550px;
-  gap: 5px; }
+a una clase poner none ej mixin($none,justify,center)*/
+.arthelado {
+  margin: 25rem; }
 
 .dj {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 15rem; }
+  margin-bottom: 15rem;
+  border: outset 8px;
+  border-left-color: gray;
+  border-top-color: violet;
+  border-right-color: gray;
+  border-bottom-color: yellow; }
 
-.fotodj {
+.casata {
+  filter: grayscale(25%); }
+
+.dj__foto {
   width: 45%; }
 
-.textodj {
+.dj__texto {
   margin: 5rem; }
 
-.disco_dj {
+.dj__disco {
   display: flex;
   justify-content: center;
   margin-bottom: 15rem; }
 
-.disco_eb {
-  display: flex;
-  justify-content: space-around;
-  background-color: black; }
-
 .eb {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
+  border: outset 8px;
+  border-left-color: gold;
+  border-top-color: black;
+  border-right-color: white;
+  border-bottom-color: gray;
   margin-bottom: 5rem; }
 
-.fotoeb {
+.eb__foto {
   width: 45%; }
 
-.textoeb {
+.eb__texto {
   margin: 5rem; }
+
+.eb__disco {
+  display: flex;
+  justify-content: space-around; }
+
+.eb__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15rem; }
 
 .op {
   filter: brightness(75%); }
@@ -268,6 +284,9 @@ main {
 
 .disco {
   text-align: center; }
+
+.grillaartistas {
+  width: 100%; }
 
 .nav-item {
   font-size: 2em;
@@ -302,6 +321,11 @@ a:hover {
 
 .header {
   display: flex; }
+
+.header {
+  margin-left: 13rem;
+  margin-right: 20rem;
+  margin-top: 5rem; }
 
 /*encapsular codigo para ahorrar*/
 /* hacer un mixin para titulos*/
@@ -355,7 +379,7 @@ main {
     width: 540px; }
 
 form {
-  font-size: 2.5em;
+  font-size: 2.6em;
   align-items: stretch;
   display: flex;
   flex-direction: column; }
@@ -364,6 +388,25 @@ fieldset {
   flex-direction: column;
   align-items: stretch;
   margin: auto; }
+
+.equipo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.mision {
+  margin: 15rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center; }
+  .mision.textolog {
+    font-size: 1.5em; }
+
+.mision__logo {
+  width: 500px; }
 
 /*tablet -*/
 /*encapsular codigo para ahorrar*/
@@ -421,13 +464,7 @@ a una clase poner none ej mixin($none,justify,center)*/
 .dj {
   display: flex;
   align-items: center;
-  margin-bottom: 15rem;
-  flex-direction: column; }
-
-.eb {
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
+  margin-bottom: 15rem; }
 
 /*celular*/
 @media (max-width: 480px) {
@@ -514,16 +551,6 @@ a una clase poner none ej mixin($none,justify,center)*/
   .nuevos-artistas .card:hover {
     filter: brightness(140%); }
 
-.mision {
-  margin: 15rem;
-  margin-top: 6rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: none;
-  align-items: center; }
-  .mision.textolog {
-    font-size: 1.2em; }
-
 .titulo:hover {
   border: outset 3px; }
 
@@ -562,10 +589,28 @@ section article {
 
 .amarillo {
   margin-top: 12%;
-  filter: grayscale(50%); }
+  filter: grayscale(50%);
+  border-radius: 20px; }
 
 .amarillo:hover {
   filter: grayscale(0%) brightness(120%); }
+
+.mas {
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem; }
+
+.infotitulo {
+  font-size: 3em; }
+
+.boton {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.btn {
+  font-size: 1.9em;
+  margin-bottom: 15rem; }
 
 /*encapsular codigo para ahorrar*/
 /* hacer un mixin para titulos*/
@@ -628,13 +673,7 @@ a una clase poner none ej mixin($none,justify,center)*/
 .dj {
   display: flex;
   align-items: center;
-  margin-bottom: 15rem;
-  flex-direction: column; }
-
-.eb {
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
+  margin-bottom: 15rem; }
 
 /*celular*/
 @media (max-width: 480px) {

@@ -1,6 +1,25 @@
+
+@import url(/scss/misc/_mixins.scss);
+
+
+
+
+
 .equipo {
-    justify-content: space-around;
-    margin-top: 5rem;
-    margin-bottom: 15rem;
-    
+
+   @include flex(row,center,center) 
 }
+
+
+
+.mision {
+    margin: 15rem;
+    margin-top: 6rem;
+    @include flex(row, none, center);
+
+    &.textolog {
+        font-size: 1.5em;
+ 
+}}
+
+.mision__logo{width: 500px;}
