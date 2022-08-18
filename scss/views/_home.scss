@@ -98,7 +98,7 @@ section article {
 border-radius: 5px;}
 
 
-    .amarillo{margin-top: 12%; filter: grayscale(50%); border-radius: 20px;}
+    .amarillo{margin-top: 12%; filter: grayscale(50%); border-radius: 20px; z-index: 1;}
     
     .amarillo:hover{filter: grayscale(0%) brightness(120%);
     
