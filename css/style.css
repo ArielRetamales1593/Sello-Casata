@@ -5,18 +5,9 @@ color # f6e050 amarill----#f9ea8a amarillo claro----#fcf5c5 amarillo pastel-----
 /*spacing*/
 /*font-family*/
 /*font-size*/
+/* importar fuente*/
 @import url(https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Roboto:ital@1&family=Ubuntu&display=swap);
 @import url(/scss/misc/_mixins.scss);
-h1 {
-  font-size: 4em;
-  text-align: center;
-  background: #ccc;
-  background: radial-gradient(#498fad, white);
-  margin-top: 8rem;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text; }
-
-/* importar fuente*/
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +19,15 @@ html {
 body {
   background-image: url(../assets/img/fondo/tan-vintage-paper-texture-35.jpg);
   font-family: 'Ubuntu', sans-serif; }
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  background: #ccc;
+  background: radial-gradient(#498fad, white);
+  margin-top: 8rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
 
 p {
   font-size: 1.5em;
@@ -124,6 +124,10 @@ a una clase poner none ej mixin($none,justify,center)*/
     grid-auto-rows: 550px;
     gap: 5px; } }
 
+@media (max-width: 1000px) {
+  .mision {
+    flex-direction: column; } }
+
 @media (max-width: 823px) {
   .mision {
     flex-direction: column; }
@@ -131,18 +135,78 @@ a una clase poner none ej mixin($none,justify,center)*/
     flex-direction: column;
     align-items: center; }
   .idea1 {
-    width: 400px; }
-  .textofargo {
-    text-align: center; } }
+    width: 400px; } }
 
 @media (max-width: 789px) {
   .info {
     flex-direction: column; }
   .mision {
     margin: 5rem; }
-  .row {
+  .arthelado {
+    margin: 5rem; }
+  .mision {
+    flex-direction: column; }
+  .carouselExampleCaptions {
+    width: 600px; }
+  .dj {
+    display: flex;
     flex-direction: column;
-    align-items: center; } }
+    justify-content: space-evenly;
+    align-items: center; }
+    .dj.dj__foto {
+      width: 250px; }
+  .eb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .eb__disco {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center; }
+  .ff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .ff__disco {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center; }
+  .id {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .ib__disco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .card-img-top {
+    width: 250px; }
+  .fargo {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    margin: 5rem; }
+  .fargo__img {
+    width: 300px; }
+  .fargo__texto2 {
+    margin: 1rem; }
+  .ideablanco__img {
+    width: 300px; }
+  .ideablanco__texto2 {
+    margin: 1rem; }
+  .estoybien__img {
+    width: 300px; }
+  .estoybien__texto2 {
+    margin: 1rem; }
+  .lista__foto {
+    width: 300px; } }
 
 @media (max-width: 575px) {
   .container {
@@ -152,15 +216,17 @@ a una clase poner none ej mixin($none,justify,center)*/
     grid-template-rows: 1fr;
     gap: 0px 0px; }
   footer {
-    width: 100%; } }
+    width: 100%; }
+  .grillaartistas {
+    width: 100%; }
+  .mision__logo {
+    width: 250px;
+    margin-top: 5rem; } }
 
 @media (max-width: 550px) {
-  .fargo {
-    margin: 5rem; }
-  .ideablanco {
-    margin: 5rem; }
-  .estoybien {
-    margin: 5rem; } }
+  .header__nav {
+    display: flex;
+    justify-content: center; } }
 
 .dj {
   display: flex;
@@ -169,10 +235,24 @@ a una clase poner none ej mixin($none,justify,center)*/
 
 /*celular*/
 @media (max-width: 480px) {
+  .dj__foto {
+    width: 250px; }
+  .eb__foto {
+    width: 250px; }
+  .ff__foto {
+    width: 250px; }
+  .id__foto {
+    width: 250px; }
+  .mision__texto {
+    margin: 0.5rem; }
+  .header__nav {
+    display: flex;
+    justify-content: center; }
+  .nav-item {
+    font-size: 1,5em;
+    line-height: 0.2em; }
   .nov {
     justify-content: center;
-    flex-direction: column; }
-  ul {
     flex-direction: column; }
   .dj {
     display: flex;
@@ -186,8 +266,6 @@ a una clase poner none ej mixin($none,justify,center)*/
 @media (max-width: 480px) {
   .nov {
     justify-content: center;
-    flex-direction: column; }
-  ul {
     flex-direction: column; }
   .nuevos-artistas {
     display: flex;
@@ -211,13 +289,18 @@ a una clase poner none ej mixin($none,justify,center)*/
     justify-content: center;
     flex-direction: column; }
   ul {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .grillaartistas {
+    margin-top: 100px; } }
 
 /*encapsular codigo para ahorrar*/
 /* hacer un mixin para titulos*/
 /* se utiliza con un @include en el scss master? y el nombre del mixin ej @include flex(row,justify,center)... si de casualidad no quieres dar un atributo
 
 a una clase poner none ej mixin($none,justify,center)*/
+.grillaartistas {
+  margin-top: 50px; }
+
 .arthelado {
   margin: 25rem; }
 
@@ -237,7 +320,7 @@ a una clase poner none ej mixin($none,justify,center)*/
   filter: grayscale(25%); }
 
 .dj__foto {
-  width: 45%; }
+  width: 40%; }
 
 .dj__texto {
   margin: 5rem; }
@@ -260,7 +343,7 @@ a una clase poner none ej mixin($none,justify,center)*/
   margin-bottom: 5rem; }
 
 .eb__foto {
-  width: 45%; }
+  width: 40%; }
 
 .eb__texto {
   margin: 5rem; }
@@ -289,7 +372,7 @@ a una clase poner none ej mixin($none,justify,center)*/
   margin-bottom: 5rem; }
 
 .ff__foto {
-  width: 45%; }
+  width: 40%; }
 
 .ff__texto {
   margin: 5rem; }
@@ -311,7 +394,7 @@ a una clase poner none ej mixin($none,justify,center)*/
   margin-bottom: 5rem; }
 
 .id__foto {
-  width: 45%; }
+  width: 40%; }
 
 .id__texto {
   margin: 5rem; }
@@ -336,10 +419,7 @@ a una clase poner none ej mixin($none,justify,center)*/
   align-items: center; }
 
 .lista__foto {
-  width: 50%; }
-
-.grillaartistas {
-  width: 100%; }
+  width: 40%; }
 
 .nav-item {
   font-size: 2em;
@@ -372,6 +452,9 @@ a:hover {
 .navbar {
   display: flex;
   transition: all 0.5s ease; }
+
+.nav-link {
+  font-size: 15px; }
 
 /* .header{margin-left: 13rem;
     margin-right: 20rem;
@@ -416,62 +499,177 @@ a:hover {
 .active .nav-link:hover {
   color: aquamarine; }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between; }
+
+.footer__logo {
+  width: 100px;
+  margin-right: auto;
+  margin-left: 3.2rem;
+  margin-top: 1rem; }
+
 /*encapsular codigo para ahorrar*/
 /* hacer un mixin para titulos*/
 /* se utiliza con un @include en el scss master? y el nombre del mixin ej @include flex(row,justify,center)... si de casualidad no quieres dar un atributo
 
 a una clase poner none ej mixin($none,justify,center)*/
-main {
-  margin: 10rem; }
-
 .fargo {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center; }
-  .fargo .poster {
-    width: 600px; }
-  .fargo .textofargo {
-    text-align: justify center;
-    display: flex;
-    margin-bottom: 2rem;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold; }
-  .fargo .textofargo2 {
-    text-align: justify;
-    margin-top: 1rem; }
+  justify-content: none;
+  align-items: center;
+  margin: 5rem; }
+
+.fargo__img {
+  width: 500px; }
+
+.fargo__texto1 {
+  text-align: justify;
+  margin: 1rem; }
+
+.fargo__texto2 {
+  text-align: justify;
+  margin-left: 15rem;
+  margin-right: 15rem; }
 
 .ideablanco {
-  margin: 15rem; }
-  .ideablanco.textoi {
-    font-weight: bold;
-    margin-bottom: 2rem; }
-  .ideablanco .textoi2 {
-    text-align: justify;
-    margin-bottom: 2rem; }
-  .ideablanco .ideatext {
-    font-weight: bold; }
-  .ideablanco .fotoidea {
-    width: 400px; }
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  margin: 5rem; }
+
+.ideablanco__img {
+  width: 500px; }
+
+.ideablanco__texto1 {
+  text-align: justify;
+  margin: 1rem; }
+
+.ideablanco__texto2 {
+  text-align: justify;
+  margin-left: 15rem;
+  margin-right: 15rem; }
 
 .estoybien {
   display: flex;
-  margin: 15rem;
   flex-direction: column;
-  align-items: center; }
-  .estoybien.estoytext {
-    font-weight: bold; }
-  .estoybien .estoytext2 {
-    text-align: justify; }
-  .estoybien .fotoestoybien {
-    width: 540px; }
+  justify-content: none;
+  align-items: center;
+  margin: 5rem; }
 
-form {
-  font-size: 2.6em;
-  align-items: stretch;
+.estoybien__img {
+  width: 500px; }
+
+.estoybien__texto1 {
+  text-align: justify;
+  margin: 1rem; }
+
+.estoybien__texto2 {
+  text-align: justify;
+  margin-left: 15rem;
+  margin-right: 15rem; }
+
+.lista {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  margin: 5rem; }
+
+.lista__img {
+  width: 500px; }
+
+.lista__texto1 {
+  text-align: justify;
+  margin: 1rem; }
+
+.lista__texto2 {
+  text-align: justify;
+  margin-left: 15rem;
+  margin-right: 15rem; }
+
+/*.fargo  {@include flex(column, none,center) ;
+    margin: 5rem;
+        
+
+
+
+
+}
+
+.poster{width: 500px;}
+
+
+    .textofargo {
+        text-align: justify center;
+        display: flex;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .textofargo2 {
+        text-align: justify;
+        margin-top: 1rem;
+
+    }
+
+
+.ideablanco {
+    margin: 15rem;
+
+    &.textoi {
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    .textoi2 {
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .ideatext {
+        font-weight: bold;
+   
+    }
+.fotoidea{width: 400px;}
+
+}
+
+.estoybien {
+    display: flex;
+    margin: 15rem;
+    flex-direction: column;
+    align-items: center;
+
+    &.estoytext {
+        font-weight: bold;
+
+    }
+
+    .estoytext2 {
+        text-align: justify;
+    }
+
+
+    .fotoestoybien{width: 540px;}
+} */
+form {
+  margin: 10rem;
+  font-size: 2.6em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15rem;
+  border: outset 8px;
+  border-left-color: gray;
+  border-top-color: violet;
+  border-right-color: gray;
+  border-bottom-color: gold; }
 
 fieldset {
   flex-direction: column;
@@ -482,7 +680,9 @@ fieldset {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10rem; }
 
 .mision {
   margin: 15rem;
@@ -494,8 +694,22 @@ fieldset {
   .mision.textolog {
     font-size: 1.5em; }
 
+.mision__texto {
+  margin-top: 2rem; }
+
 .mision__logo {
   width: 500px; }
+
+.mision__logo:hover {
+  filter: brightness(120%); }
+
+.card-img-top {
+  width: 300px;
+  height: 250px;
+  filter: brightness(50%); }
+
+.card-img-top:hover {
+  filter: brightness(100%); }
 
 /*tablet -*/
 /*encapsular codigo para ahorrar*/
@@ -512,6 +726,10 @@ a una clase poner none ej mixin($none,justify,center)*/
     grid-auto-rows: 550px;
     gap: 5px; } }
 
+@media (max-width: 1000px) {
+  .mision {
+    flex-direction: column; } }
+
 @media (max-width: 823px) {
   .mision {
     flex-direction: column; }
@@ -519,18 +737,78 @@ a una clase poner none ej mixin($none,justify,center)*/
     flex-direction: column;
     align-items: center; }
   .idea1 {
-    width: 400px; }
-  .textofargo {
-    text-align: center; } }
+    width: 400px; } }
 
 @media (max-width: 789px) {
   .info {
     flex-direction: column; }
   .mision {
     margin: 5rem; }
-  .row {
+  .arthelado {
+    margin: 5rem; }
+  .mision {
+    flex-direction: column; }
+  .carouselExampleCaptions {
+    width: 600px; }
+  .dj {
+    display: flex;
     flex-direction: column;
-    align-items: center; } }
+    justify-content: space-evenly;
+    align-items: center; }
+    .dj.dj__foto {
+      width: 250px; }
+  .eb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .eb__disco {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center; }
+  .ff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .ff__disco {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center; }
+  .id {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .ib__disco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .card-img-top {
+    width: 250px; }
+  .fargo {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    margin: 5rem; }
+  .fargo__img {
+    width: 300px; }
+  .fargo__texto2 {
+    margin: 1rem; }
+  .ideablanco__img {
+    width: 300px; }
+  .ideablanco__texto2 {
+    margin: 1rem; }
+  .estoybien__img {
+    width: 300px; }
+  .estoybien__texto2 {
+    margin: 1rem; }
+  .lista__foto {
+    width: 300px; } }
 
 @media (max-width: 575px) {
   .container {
@@ -540,15 +818,17 @@ a una clase poner none ej mixin($none,justify,center)*/
     grid-template-rows: 1fr;
     gap: 0px 0px; }
   footer {
-    width: 100%; } }
+    width: 100%; }
+  .grillaartistas {
+    width: 100%; }
+  .mision__logo {
+    width: 250px;
+    margin-top: 5rem; } }
 
 @media (max-width: 550px) {
-  .fargo {
-    margin: 5rem; }
-  .ideablanco {
-    margin: 5rem; }
-  .estoybien {
-    margin: 5rem; } }
+  .header__nav {
+    display: flex;
+    justify-content: center; } }
 
 .dj {
   display: flex;
@@ -557,10 +837,24 @@ a una clase poner none ej mixin($none,justify,center)*/
 
 /*celular*/
 @media (max-width: 480px) {
+  .dj__foto {
+    width: 250px; }
+  .eb__foto {
+    width: 250px; }
+  .ff__foto {
+    width: 250px; }
+  .id__foto {
+    width: 250px; }
+  .mision__texto {
+    margin: 0.5rem; }
+  .header__nav {
+    display: flex;
+    justify-content: center; }
+  .nav-item {
+    font-size: 1,5em;
+    line-height: 0.2em; }
   .nov {
     justify-content: center;
-    flex-direction: column; }
-  ul {
     flex-direction: column; }
   .dj {
     display: flex;
@@ -574,8 +868,6 @@ a una clase poner none ej mixin($none,justify,center)*/
 @media (max-width: 480px) {
   .nov {
     justify-content: center;
-    flex-direction: column; }
-  ul {
     flex-direction: column; }
   .nuevos-artistas {
     display: flex;
@@ -599,7 +891,9 @@ a una clase poner none ej mixin($none,justify,center)*/
     justify-content: center;
     flex-direction: column; }
   ul {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .grillaartistas {
+    margin-top: 100px; } }
 
 .nuevosartistas {
   margin: 5rem; }
@@ -722,6 +1016,10 @@ a una clase poner none ej mixin($none,justify,center)*/
     grid-auto-rows: 550px;
     gap: 5px; } }
 
+@media (max-width: 1000px) {
+  .mision {
+    flex-direction: column; } }
+
 @media (max-width: 823px) {
   .mision {
     flex-direction: column; }
@@ -729,18 +1027,78 @@ a una clase poner none ej mixin($none,justify,center)*/
     flex-direction: column;
     align-items: center; }
   .idea1 {
-    width: 400px; }
-  .textofargo {
-    text-align: center; } }
+    width: 400px; } }
 
 @media (max-width: 789px) {
   .info {
     flex-direction: column; }
   .mision {
     margin: 5rem; }
-  .row {
+  .arthelado {
+    margin: 5rem; }
+  .mision {
+    flex-direction: column; }
+  .carouselExampleCaptions {
+    width: 600px; }
+  .dj {
+    display: flex;
     flex-direction: column;
-    align-items: center; } }
+    justify-content: space-evenly;
+    align-items: center; }
+    .dj.dj__foto {
+      width: 250px; }
+  .eb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .eb__disco {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center; }
+  .ff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .ff__disco {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center; }
+  .id {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .ib__disco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .card-img-top {
+    width: 250px; }
+  .fargo {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    margin: 5rem; }
+  .fargo__img {
+    width: 300px; }
+  .fargo__texto2 {
+    margin: 1rem; }
+  .ideablanco__img {
+    width: 300px; }
+  .ideablanco__texto2 {
+    margin: 1rem; }
+  .estoybien__img {
+    width: 300px; }
+  .estoybien__texto2 {
+    margin: 1rem; }
+  .lista__foto {
+    width: 300px; } }
 
 @media (max-width: 575px) {
   .container {
@@ -750,15 +1108,17 @@ a una clase poner none ej mixin($none,justify,center)*/
     grid-template-rows: 1fr;
     gap: 0px 0px; }
   footer {
-    width: 100%; } }
+    width: 100%; }
+  .grillaartistas {
+    width: 100%; }
+  .mision__logo {
+    width: 250px;
+    margin-top: 5rem; } }
 
 @media (max-width: 550px) {
-  .fargo {
-    margin: 5rem; }
-  .ideablanco {
-    margin: 5rem; }
-  .estoybien {
-    margin: 5rem; } }
+  .header__nav {
+    display: flex;
+    justify-content: center; } }
 
 .dj {
   display: flex;
@@ -767,10 +1127,24 @@ a una clase poner none ej mixin($none,justify,center)*/
 
 /*celular*/
 @media (max-width: 480px) {
+  .dj__foto {
+    width: 250px; }
+  .eb__foto {
+    width: 250px; }
+  .ff__foto {
+    width: 250px; }
+  .id__foto {
+    width: 250px; }
+  .mision__texto {
+    margin: 0.5rem; }
+  .header__nav {
+    display: flex;
+    justify-content: center; }
+  .nav-item {
+    font-size: 1,5em;
+    line-height: 0.2em; }
   .nov {
     justify-content: center;
-    flex-direction: column; }
-  ul {
     flex-direction: column; }
   .dj {
     display: flex;
@@ -784,8 +1158,6 @@ a una clase poner none ej mixin($none,justify,center)*/
 @media (max-width: 480px) {
   .nov {
     justify-content: center;
-    flex-direction: column; }
-  ul {
     flex-direction: column; }
   .nuevos-artistas {
     display: flex;
@@ -809,4 +1181,6 @@ a una clase poner none ej mixin($none,justify,center)*/
     justify-content: center;
     flex-direction: column; }
   ul {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .grillaartistas {
+    margin-top: 100px; } }

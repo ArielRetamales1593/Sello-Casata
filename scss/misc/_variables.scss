@@ -10,6 +10,8 @@ $color-alternative:#86b4c8;
 
 /*spacing*/ 
 
+$marginpost: 5rem;
+
 
 
 /*font-family*/
@@ -22,14 +24,7 @@ $font-principal:'Ubuntu', sans-serif;
 $font-titulo: 2em; 
 
 
-h1{ font-size: 4em; text-align: center; 
-    background: #ccc ;
-    background :radial-gradient($color-primary,white) ;
-  margin-top: 8rem;
-    
-    -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;   
- }
+
 
 
 

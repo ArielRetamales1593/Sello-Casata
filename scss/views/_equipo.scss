@@ -7,7 +7,10 @@
 
 .equipo {
 
-   @include flex(row,center,center) 
+   @include flex(row,center,center) ;
+   flex-wrap: wrap;
+   margin: 10rem;
+
 }
 
 
@@ -19,7 +22,18 @@
 
     &.textolog {
         font-size: 1.5em;
- 
+
 }}
+.mision__texto{margin-top: 2rem;}
 
 .mision__logo{width: 500px;}
+.mision__logo:hover{filter: brightness(120%);}
+
+
+
+.card-img-top{width: 300px; height: 250px;
+filter: brightness(50%)
+}
+
+
+.card-img-top:hover{filter: brightness(100%);}

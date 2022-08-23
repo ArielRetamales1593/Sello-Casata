@@ -10,7 +10,9 @@
 
 html {
     font-size: 62.5%;
+    
 }
+
 
 
 
@@ -22,6 +24,19 @@ body {
     background-image: url(../assets/img/fondo/tan-vintage-paper-texture-35.jpg);
     font-family: 'Ubuntu', sans-serif
 }
+
+h1{ font-size: 4em; text-align: center; 
+    background: #ccc ;
+    background :radial-gradient($color-primary,white) ;
+  margin-top: 8rem;
+    
+    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;   
+ }
+
+
+
+
 
 p {
     font-size: 1.5em;

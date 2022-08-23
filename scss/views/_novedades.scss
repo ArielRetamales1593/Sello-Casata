@@ -1,0 +1,255 @@
+@import '../misc/mixins';
+
+
+.fargo {
+    @include flex (column, none, center);
+    margin: 5rem;
+
+
+
+
+}
+
+///hacer variable aca de todos los post///
+
+
+
+.fargo__img {
+    width: 500px
+}
+
+.fargo__texto1 {
+    text-align: justify;
+
+
+    margin: 1rem;
+}
+
+.fargo__texto2 {
+    text-align: justify;
+
+    margin-left: 15rem;
+    margin-right: 15rem;
+
+}
+
+
+
+
+.ideablanco {
+    @include flex (column, none, center);
+    margin: 5rem;
+
+
+
+
+}
+
+
+
+
+
+.ideablanco__img {
+    width: 500px
+}
+
+.ideablanco__texto1 {
+    text-align: justify;
+
+
+    margin: 1rem;
+}
+
+.ideablanco__texto2 {
+    text-align: justify;
+
+    margin-left: 15rem;
+    margin-right: 15rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.estoybien {
+    @include flex (column, none, center);
+    margin: 5rem;
+
+
+
+
+}
+
+
+
+
+
+.estoybien__img {
+    width: 500px
+}
+
+.estoybien__texto1 {
+    text-align: justify;
+
+
+    margin: 1rem;
+}
+
+.estoybien__texto2 {
+    text-align: justify;
+
+    margin-left: 15rem;
+    margin-right: 15rem;
+
+}
+
+
+
+
+
+
+
+.lista {
+    @include flex (column, none, center);
+    margin: 5rem;
+
+
+
+
+}
+
+
+
+
+
+.lista__img {
+    width: 500px
+}
+
+.lista__texto1 {
+    text-align: justify;
+
+
+    margin: 1rem;
+}
+
+.lista__texto2 {
+    text-align: justify;
+
+    margin-left: 15rem;
+    margin-right: 15rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.fargo  {@include flex(column, none,center) ;
+    margin: 5rem;
+        
+
+
+
+
+}
+
+.poster{width: 500px;}
+
+
+    .textofargo {
+        text-align: justify center;
+        display: flex;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .textofargo2 {
+        text-align: justify;
+        margin-top: 1rem;
+
+    }
+
+
+.ideablanco {
+    margin: 15rem;
+
+    &.textoi {
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    .textoi2 {
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .ideatext {
+        font-weight: bold;
+   
+    }
+.fotoidea{width: 400px;}
+
+}
+
+.estoybien {
+    display: flex;
+    margin: 15rem;
+    flex-direction: column;
+    align-items: center;
+
+    &.estoytext {
+        font-weight: bold;
+
+    }
+
+    .estoytext2 {
+        text-align: justify;
+    }
+
+
+    .fotoestoybien{width: 540px;}
+} */

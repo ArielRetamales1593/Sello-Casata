@@ -18,6 +18,19 @@
 
 }
 
+@media(max-width:1000px){
+
+.mision{flex-direction: column;}
+
+
+
+
+
+
+}
+
+
+
 @media(max-width:823px) {
 
     .mision {
@@ -33,10 +46,7 @@
         width: 400px;
     }
 
-    .textofargo {
-        text-align: center;
-    }
-
+  
 }
 
 
@@ -56,10 +66,93 @@
 
     }
 
-    .row {
-        flex-direction: column;
-        align-items: center;
+    .arthelado{margin: 5rem;}
+
+
+    .mision{flex-direction: column;}
+
+    .carouselExampleCaptions{width:600px}
+
+
+    .dj {@include flex(column, space-evenly, center) ;
+        &.dj__foto{ width:  250px}
+       
     }
+
+    
+    .eb {@include flex(column, space-evenly, center) ;
+       
+    }
+
+    .eb__disco {@include flex(column, none, center) ;
+       
+    }
+    
+    .ff{@include flex(column, space-evenly, center) ;
+       
+    }    
+
+    .ff__disco{@include flex(column, none, center) ;
+       
+    }    
+
+    
+    .id{@include flex(column, space-evenly, center) ;
+       
+    }    
+
+    .ib__disco{@include flex(column, space-evenly, center) ;
+       
+    }    
+
+    .card-img-top{ width:250px}
+
+
+
+    .fargo {
+        @include flex (column, none, center);
+        margin: 5rem;
+    
+    
+    
+    
+    }
+    
+
+    
+    
+    
+    .fargo__img {
+        width: 300px
+
+  }
+  .fargo__texto2 {margin: 1rem;
+    
+
+   
+   
+  }
+
+.ideablanco__img{width: 300px;}
+
+
+  .ideablanco__texto2{margin: 1rem;}
+
+
+
+
+  .estoybien__img{width: 300px;}
+
+
+  .estoybien__texto2{margin: 1rem;}
+
+
+
+
+.lista__foto{width: 300px;}
+
+
+
 
 }
 
@@ -83,25 +176,38 @@
     footer {
         width: 100%;
     }
+
+
+    .grillaartistas{width: 100%;}
+
+
+.mision__logo{width: 250px; 
+margin-top: 5rem;
+}
+
+
 }
 
 
 
 @media(max-width:550px) {
+    
 
+    .header__nav{display:flex;
+        justify-content: center;
 
-
-    .fargo {
-        margin: 5rem;
+       
+    
+    
+    
     }
 
-    .ideablanco {
-        margin: 5rem;
-    }
 
-    .estoybien {
-        margin: 5rem;
-    }
+
+    
+    
+    
+
 
 }
 
@@ -130,13 +236,42 @@
 @media(max-width:480px) {
 
 
+    .dj__foto{ width:  250px}
+    .eb__foto{width: 250px;}
+    .ff__foto{width: 250px;}
+    .id__foto{width: 250px;}
+
+    .mision__texto{margin: 0.5rem;}
+
+
+
+
+.header__nav{display:flex;
+    justify-content: center;
+
+
+
+}
+
+.nav-item{font-size: 1,5em;
+    line-height: 0.2em;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
     .nov {
         justify-content: center;
-        flex-direction: column;
-    }
-
-    ul {
         flex-direction: column;
     }
 
@@ -166,11 +301,6 @@
         justify-content: center;
         flex-direction: column;
     }
-
-    ul {
-        flex-direction: column;
-    }
-
 
     .nuevos-artistas {
         @include flex(column, none, center);
@@ -222,6 +352,13 @@
     ul {
         flex-direction: column;
     }
+
+
+    .grillaartistas{margin-top: 100px;}
+
+
+
+
 
 
 }
