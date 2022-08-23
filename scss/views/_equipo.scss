@@ -1,39 +1,48 @@
-
 @import url(/scss/misc/_mixins.scss);
-
-
-
 
 
 .equipo {
 
-   @include flex(row,center,center) ;
-   flex-wrap: wrap;
-   margin: 10rem;
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    margin: 10rem;
 
 }
 
-
-
 .mision {
-    margin: 15rem;
+    margin: 10rem;
     margin-top: 6rem;
     @include flex(row, none, center);
 
-    &.textolog {
-        font-size: 1.5em;
+    & .mision__texto {
+        margin-top: 2rem;
+        text-align: justify;
+        margin-left: 1rem;
 
-}}
-.mision__texto{margin-top: 2rem;}
+    }
 
-.mision__logo{width: 500px;}
-.mision__logo:hover{filter: brightness(120%);}
+    & .mision__logo {
+        width: 500px;
+
+        &:hover {
+            filter: brightness(120%);
+
+        }
 
 
+    }
 
-.card-img-top{width: 300px; height: 250px;
-filter: brightness(50%)
+
 }
 
 
-.card-img-top:hover{filter: brightness(100%);}
+
+.card-img-top {
+    width: 300px;
+    height: 250px;
+    filter: brightness(50%);
+
+    &:hover {
+        filter: brightness(100%);
+    }
+}

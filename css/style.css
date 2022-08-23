@@ -206,7 +206,9 @@ a una clase poner none ej mixin($none,justify,center)*/
   .estoybien__texto2 {
     margin: 1rem; }
   .lista__foto {
-    width: 300px; } }
+    width: 300px; }
+  .formulario__item {
+    margin: 1rem; } }
 
 @media (max-width: 575px) {
   .container {
@@ -315,15 +317,10 @@ a una clase poner none ej mixin($none,justify,center)*/
   border-top-color: violet;
   border-right-color: gray;
   border-bottom-color: yellow; }
-
-.casata {
-  filter: grayscale(25%); }
-
-.dj__foto {
-  width: 40%; }
-
-.dj__texto {
-  margin: 5rem; }
+  .dj .dj__foto {
+    width: 40%; }
+  .dj .dj__texto {
+    margin: 5rem; }
 
 .dj__disco {
   display: flex;
@@ -341,12 +338,10 @@ a una clase poner none ej mixin($none,justify,center)*/
   border-right-color: white;
   border-bottom-color: gray;
   margin-bottom: 5rem; }
-
-.eb__foto {
-  width: 40%; }
-
-.eb__texto {
-  margin: 5rem; }
+  .eb .eb__foto {
+    width: 40%; }
+  .eb .eb__texto {
+    margin: 5rem; }
 
 .eb__disco {
   display: flex;
@@ -370,12 +365,10 @@ a una clase poner none ej mixin($none,justify,center)*/
   border-right-color: white;
   border-bottom-color: gray;
   margin-bottom: 5rem; }
-
-.ff__foto {
-  width: 40%; }
-
-.ff__texto {
-  margin: 5rem; }
+  .ff .ff__foto {
+    width: 40%; }
+  .ff .ff__texto {
+    margin: 5rem; }
 
 .ff__disco {
   display: flex;
@@ -392,12 +385,10 @@ a una clase poner none ej mixin($none,justify,center)*/
   border-right-color: white;
   border-bottom-color: gray;
   margin-bottom: 5rem; }
-
-.id__foto {
-  width: 40%; }
-
-.id__texto {
-  margin: 5rem; }
+  .id .id__foto {
+    width: 40%; }
+  .id .id__texto {
+    margin: 5rem; }
 
 .id__disco {
   display: flex;
@@ -405,49 +396,66 @@ a una clase poner none ej mixin($none,justify,center)*/
 
 .op {
   filter: brightness(75%); }
-
-.op:hover {
-  filter: brightness(100%); }
+  .op .op:hover {
+    filter: brightness(100%); }
 
 .disco {
   text-align: center; }
 
-.lista {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+.casata {
+  filter: grayscale(25%); }
 
-.lista__foto {
-  width: 40%; }
+.header {
+  width: 100%;
+  height: 25vh;
+  background-image: url(../../assets/img/fondo/tan-vintage-paper-texture-35.jpg);
+  background-position: cover;
+  background-position: center; }
+  .header .header__nav {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    position: fixed;
+    z-index: 3; }
+    .header .header__nav .nav-item {
+      font-size: 2em;
+      font-family: 'Ubuntu', sans-serif;
+      color: black;
+      margin-bottom: 5rem;
+      margin: 1rem;
+      transition: all 0.5s ease; }
+      .header .header__nav .nav-item.nav-item:hover {
+        border: outset 3px;
+        border-radius: 5px; }
+  .header .header__logo {
+    width: 100px;
+    margin-right: auto;
+    margin-left: 2rem;
+    margin-top: 1rem; }
+    .header .header__logo .header__logo:hover {
+      filter: brightness(150%); }
 
-.nav-item {
-  font-size: 2em;
-  font-family: 'Ubuntu', sans-serif;
-  color: black;
-  margin-bottom: 5rem;
-  margin: 1rem; }
-  .nav-item.nav-item:hover {
-    border: outset 3px;
-    border-radius: 5px;
-    filter: brightness(100%); }
-  .nav-item .nav-link:hover {
-    filter: brightness(200%); }
+.header__nav.active {
+  padding: 15px;
+  background-color: black; }
+
+.header__nav.active.nav-link {
+  color: white;
+  z-index: 3; }
+
+.active .nav-link {
+  color: white; }
+
+.nav-link {
+  color: black; }
 
 ul {
   margin-top: 2rem; }
 
 a:hover {
   filter: brightness(200%); }
-
-.header__logo:hover {
-  filter: brightness(150%); }
-
-.header__logo {
-  width: 100px;
-  margin-right: auto;
-  margin-left: 2rem;
-  margin-top: 1rem; }
 
 .navbar {
   display: flex;
@@ -460,44 +468,8 @@ a:hover {
     margin-right: 20rem;
     margin-top: 5rem;
 }*/
-.header {
-  width: 100%;
-  height: 25vh;
-  background-image: url(../../assets/img/fondo/tan-vintage-paper-texture-35.jpg);
-  background-position: cover;
-  background-position: center; }
-
-.header__nav {
-  width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 25px;
-  position: fixed;
-  z-index: 3; }
-
-.nav-item {
-  transition: all 0.5s ease; }
-
 .scroll {
   height: 100px; }
-
-.header__nav.active {
-  padding: 15px;
-  background-color: black; }
-
-.header__nav.active.nav-link {
-  color: white;
-  z-index: 3; }
-
-.header .nav-link {
-  color: black; }
-
-.active .nav-link {
-  color: white; }
-
-.active .nav-link:hover {
-  color: aquamarine; }
 
 footer {
   display: flex;
@@ -522,18 +494,15 @@ a una clase poner none ej mixin($none,justify,center)*/
   justify-content: none;
   align-items: center;
   margin: 5rem; }
-
-.fargo__img {
-  width: 500px; }
-
-.fargo__texto1 {
-  text-align: justify;
-  margin: 1rem; }
-
-.fargo__texto2 {
-  text-align: justify;
-  margin-left: 15rem;
-  margin-right: 15rem; }
+  .fargo .fargo__img {
+    width: 500px; }
+  .fargo .fargo__texto1 {
+    text-align: justify;
+    margin: 1rem; }
+  .fargo .fargo__texto2 {
+    text-align: justify;
+    margin-left: 15rem;
+    margin-right: 15rem; }
 
 .ideablanco {
   display: flex;
@@ -541,18 +510,15 @@ a una clase poner none ej mixin($none,justify,center)*/
   justify-content: none;
   align-items: center;
   margin: 5rem; }
-
-.ideablanco__img {
-  width: 500px; }
-
-.ideablanco__texto1 {
-  text-align: justify;
-  margin: 1rem; }
-
-.ideablanco__texto2 {
-  text-align: justify;
-  margin-left: 15rem;
-  margin-right: 15rem; }
+  .ideablanco .ideablanco__img {
+    width: 500px; }
+  .ideablanco .ideablanco__texto1 {
+    text-align: justify;
+    margin: 1rem; }
+  .ideablanco .ideablanco__texto2 {
+    text-align: justify;
+    margin-left: 15rem;
+    margin-right: 15rem; }
 
 .estoybien {
   display: flex;
@@ -560,18 +526,15 @@ a una clase poner none ej mixin($none,justify,center)*/
   justify-content: none;
   align-items: center;
   margin: 5rem; }
-
-.estoybien__img {
-  width: 500px; }
-
-.estoybien__texto1 {
-  text-align: justify;
-  margin: 1rem; }
-
-.estoybien__texto2 {
-  text-align: justify;
-  margin-left: 15rem;
-  margin-right: 15rem; }
+  .estoybien .estoybien__img {
+    width: 500px; }
+  .estoybien .estoybien__texto1 {
+    text-align: justify;
+    margin: 1rem; }
+  .estoybien .estoybien__texto2 {
+    text-align: justify;
+    margin-left: 15rem;
+    margin-right: 15rem; }
 
 .lista {
   display: flex;
@@ -579,87 +542,25 @@ a una clase poner none ej mixin($none,justify,center)*/
   justify-content: none;
   align-items: center;
   margin: 5rem; }
+  .lista .lista__img {
+    width: 500px; }
+  .lista .lista__texto1 {
+    text-align: justify;
+    margin: 1rem; }
+  .lista .lista__texto2 {
+    text-align: justify;
+    margin-left: 15rem;
+    margin-right: 15rem; }
 
-.lista__img {
-  width: 500px; }
+.lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .lista .lista__foto {
+    width: 40%; }
 
-.lista__texto1 {
-  text-align: justify;
-  margin: 1rem; }
-
-.lista__texto2 {
-  text-align: justify;
-  margin-left: 15rem;
-  margin-right: 15rem; }
-
-/*.fargo  {@include flex(column, none,center) ;
-    margin: 5rem;
-        
-
-
-
-
-}
-
-.poster{width: 500px;}
-
-
-    .textofargo {
-        text-align: justify center;
-        display: flex;
-        margin-bottom: 2rem;
-        flex-direction: column;
-        align-items: center;
-        font-weight: bold;
-    }
-
-    .textofargo2 {
-        text-align: justify;
-        margin-top: 1rem;
-
-    }
-
-
-.ideablanco {
-    margin: 15rem;
-
-    &.textoi {
-        font-weight: bold;
-        margin-bottom: 2rem;
-    }
-
-    .textoi2 {
-        text-align: justify;
-        margin-bottom: 2rem;
-    }
-
-    .ideatext {
-        font-weight: bold;
-   
-    }
-.fotoidea{width: 400px;}
-
-}
-
-.estoybien {
-    display: flex;
-    margin: 15rem;
-    flex-direction: column;
-    align-items: center;
-
-    &.estoytext {
-        font-weight: bold;
-
-    }
-
-    .estoytext2 {
-        text-align: justify;
-    }
-
-
-    .fotoestoybien{width: 540px;}
-} */
-form {
+.formulario__item {
   margin: 10rem;
   font-size: 2.6em;
   display: flex;
@@ -667,14 +568,14 @@ form {
   margin-bottom: 15rem;
   border: outset 8px;
   border-left-color: gray;
-  border-top-color: violet;
-  border-right-color: gray;
-  border-bottom-color: gold; }
+  border-top-color: black;
+  border-right-color: white;
+  border-bottom-color: black; }
 
-fieldset {
-  flex-direction: column;
-  align-items: stretch;
-  margin: auto; }
+.gradient {
+  background: linear-gradient(#FDCADC 25%, #c2dae4 25%, #498fad 75%);
+  background-repeat: repeat;
+  padding: 2rem; }
 
 .equipo {
   display: flex;
@@ -685,31 +586,27 @@ fieldset {
   margin: 10rem; }
 
 .mision {
-  margin: 15rem;
+  margin: 10rem;
   margin-top: 6rem;
   display: flex;
   flex-direction: row;
   justify-content: none;
   align-items: center; }
-  .mision.textolog {
-    font-size: 1.5em; }
-
-.mision__texto {
-  margin-top: 2rem; }
-
-.mision__logo {
-  width: 500px; }
-
-.mision__logo:hover {
-  filter: brightness(120%); }
+  .mision .mision__texto {
+    margin-top: 2rem;
+    text-align: justify;
+    margin-left: 1rem; }
+  .mision .mision__logo {
+    width: 500px; }
+    .mision .mision__logo:hover {
+      filter: brightness(120%); }
 
 .card-img-top {
   width: 300px;
   height: 250px;
   filter: brightness(50%); }
-
-.card-img-top:hover {
-  filter: brightness(100%); }
+  .card-img-top:hover {
+    filter: brightness(100%); }
 
 /*tablet -*/
 /*encapsular codigo para ahorrar*/
@@ -808,7 +705,9 @@ a una clase poner none ej mixin($none,justify,center)*/
   .estoybien__texto2 {
     margin: 1rem; }
   .lista__foto {
-    width: 300px; } }
+    width: 300px; }
+  .formulario__item {
+    margin: 1rem; } }
 
 @media (max-width: 575px) {
   .container {
@@ -895,89 +794,22 @@ a una clase poner none ej mixin($none,justify,center)*/
   .grillaartistas {
     margin-top: 100px; } }
 
-.nuevosartistas {
-  margin: 5rem; }
-
-.navflex {
-  display: flex; }
-
-.d-block {
-  width: 100%;
-  height: 900px;
-  filter: brightness(65%); }
-
-.d-block:hover {
-  filter: brightness(100%); }
-
-.contenedorform {
-  width: 100%;
-  height: 600px; }
-
-.info {
-  display: flex;
-  margin: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.idea1 {
-  width: 600px; }
-
-.nuevos-artistas {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 15rem;
-  margin-bottom: 15rem; }
-  .nuevos-artistas .card:hover {
-    filter: brightness(140%); }
-
-.titulo:hover {
-  border: outset 3px; }
-
-.video1 {
-  display: flex;
-  flex-direction: column; }
-  .video1.video1__text {
-    font-size: 5em;
-    text-align: center; }
-
-.textoi {
-  margin-left: 1rem; }
-
-section article {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0; }
-
-.banda2 {
-  flex-direction: row-reverse; }
-
-.ebnew {
-  flex-direction: row-reverse; }
-
 .container {
   margin-top: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px; }
-
-.ig {
-  width: 100%;
-  border-radius: 5px; }
-
-.amarillo {
-  margin-top: 12%;
-  filter: grayscale(50%);
-  border-radius: 20px;
-  z-index: 1; }
-
-.amarillo:hover {
-  filter: grayscale(0%) brightness(120%); }
+  .container .ig {
+    width: 100%;
+    border-radius: 5px; }
+  .container .amarillo {
+    margin-top: 12%;
+    filter: grayscale(50%);
+    border-radius: 20px;
+    z-index: 1; }
+    .container .amarillo.amarillo:hover {
+      filter: grayscale(0%) brightness(120%); }
 
 .mas {
   display: flex;
@@ -1098,7 +930,9 @@ a una clase poner none ej mixin($none,justify,center)*/
   .estoybien__texto2 {
     margin: 1rem; }
   .lista__foto {
-    width: 300px; } }
+    width: 300px; }
+  .formulario__item {
+    margin: 1rem; } }
 
 @media (max-width: 575px) {
   .container {

@@ -1,4 +1,4 @@
-form {
+.formulario__item {
     margin:10rem;
     font-size: 2.6em;
     display: flex;
@@ -6,7 +6,7 @@ form {
 
     
      margin-bottom: 15rem; border: outset 8px ;
-    @include border(gray,violet, gray, gold);
+    @include border(gray,black, white, black);
     
     
    
@@ -17,8 +17,12 @@ form {
 
 }
 
-fieldset {
-    flex-direction: column;
-    align-items: stretch;
-    margin: auto;
+.gradient{ background: linear-gradient(#FDCADC 25% , #c2dae4 25% ,#498fad 75%) ;
+background-repeat: repeat;
+padding:2rem
+
+
+
+
+
 }

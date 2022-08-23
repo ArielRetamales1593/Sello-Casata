@@ -1,118 +1,139 @@
-
-
 @import"../misc/mediaquery";
 @import '../misc/mixins';
 
 
 
 
+///grila--------------------------------------------------------------------------
 
-
-.grillaartistas{margin-top: 50px
-    
-    
-    ;
+.grillaartistas {
+    margin-top: 50px;
 
 }
 
 
 
 
-    .arthelado{margin: 25rem;}
-
-
-
-
-.dj{    @include flex(row-reverse, space-evenly, center) ;
-    margin-bottom: 15rem; border: outset 8px ;
-@include border(gray,violet, gray, yellow);
-
-
-}
-
-
-    .casata{filter: grayscale(25%);}
-
-
-
-
-.dj__foto{width: 40%;}
-
-.dj__texto{
-margin: 5rem;
-}
-
-.dj__disco{display: flex ;
-
-justify-content: center;
-
-margin-bottom: 15rem;
+.arthelado {
+    margin: 25rem;
 }
 
 
 
 
+.dj {
+    @include flex(row-reverse, space-evenly, center);
+    margin-bottom: 15rem;
+    border: outset 8px;
+    @include border(gray, violet, gray, yellow);
+
+    & .dj__foto {
+        width: 40%;
+    }
+
+    & .dj__texto {
+        margin: 5rem;
+    }
 
 
-.eb{@include flex(row,center,center);
-    border: outset 8px ;
-    @include border(gold,black,white,gray);
-    
-    margin-bottom: 5rem ;}
-
-.eb__foto{width: 40%;}
-
-.eb__texto{
-margin: 5rem;
 }
 
 
-.eb__disco{display: flex; 
+.dj__disco {
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 15rem;
+}
+
+
+
+
+
+
+.eb {
+    @include flex(row, center, center);
+    border: outset 8px;
+    @include border(gold, black, white, gray);
+
+    margin-bottom: 5rem;
+
+
+    & .eb__foto {
+        width: 40%;
+    }
+
+    & .eb__texto {
+        margin: 5rem;
+    }
+
+}
+
+
+
+.eb__disco {
+    display: flex;
     justify-content: space-around;
 }
-    
-
-.eb__redes{@include flex(row,center,center);
-margin: 15rem; }
 
 
-
-.ff{@include flex(row-reverse ,center,center);
-    border: outset 8px ;
-    @include border(gold,black,white,gray);
-    
-    margin-bottom: 5rem ;}
-
-.ff__foto{width: 40%;}
-
-.ff__texto{
-margin: 5rem;
+.eb__redes {
+    @include flex(row, center, center);
+    margin: 15rem;
 }
 
 
-.ff__disco{display: flex; 
+
+.ff {
+    @include flex(row-reverse, center, center);
+    border: outset 8px;
+    @include border(gold, black, white, gray);
+
+    margin-bottom: 5rem;
+
+
+    & .ff__foto {
+        width: 40%;
+    }
+
+    & .ff__texto {
+        margin: 5rem;
+    }
+
+}
+
+
+.ff__disco {
+    display: flex;
     justify-content: space-around;
 }
-    
 
 
-.id{@include flex(row ,center,center);
-    border: outset 8px ;
-    @include border(gold,black,white,gray);
-    
-    margin-bottom: 5rem ;}
 
-.id__foto{width: 40%;}
+.id {
+    @include flex(row, center, center);
+    border: outset 8px;
+    @include border(gold, black, white, gray);
 
-.id__texto{
-margin: 5rem;
+    margin-bottom: 5rem;
+
+    & .id__foto {
+        width: 40%;
+    }
+
+    & .id__texto {
+        margin: 5rem;
+    }
+
 }
 
 
-.id__disco{display: flex; 
+.id__disco {
+    display: flex;
     justify-content: space-around;
 }
-    
+
 
 
 
@@ -123,22 +144,18 @@ margin: 5rem;
 .op {
     filter: brightness(75%);
 
+
+
+    & .op:hover {
+        filter: brightness(100%);
+    }
 }
 
-.op:hover {
-    filter: brightness(100%);
+.disco {
+    text-align: center;
 }
 
-.disco{text-align: center;}
 
-
-
-
-
-
-.lista{@include flex(column,center,center ) }
-
-.lista__foto{width:40% ;}
-
-
-
+.casata {
+    filter: grayscale(25%);
+}
