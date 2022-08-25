@@ -1,4 +1,3 @@
-/*encapsular codigo para ahorrar*/
 
 @mixin flex($direction,$justify,$align){
 display: flex;
@@ -8,7 +7,6 @@ align-items: $align;
 }
 
 
-/* hacer un mixin para titulos*/
 
 @mixin border($colorl,$colortop,$colorr,$colorbu){
 border-left-color:$colorl ;
@@ -20,6 +18,3 @@ border-bottom-color:$colorbu;
 }
 
 
-/* se utiliza con un @include en el scss master? y el nombre del mixin ej @include flex(row,justify,center)... si de casualidad no quieres dar un atributo
-
-a una clase poner none ej mixin($none,justify,center)*/ 

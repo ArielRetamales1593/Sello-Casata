@@ -1,6 +1,6 @@
 @import '../misc/mixins';
 
-
+/*novedades-*/
 .fargo {
     @include flex (column, none, center);
     margin: 5rem;
@@ -23,7 +23,6 @@
     
     }}
 
-///hacer variable aca de todos los post///
 
 
 .ideablanco {
@@ -82,7 +81,7 @@
     @include flex (column, none, center);
     margin: 5rem;
 
-    & .lista__img {
+    & .lista__foto {
         width: 500px
     }
     
@@ -102,11 +101,4 @@
     }}
 
 
-.lista {
-    @include flex(column, center, center);
-
-.lista__foto {
-    width: 40%;
-}
-    
-}
+ 

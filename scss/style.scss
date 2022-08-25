@@ -1,15 +1,17 @@
+/*pagina estilos-*/
+
 @import "./misc/_variables";
 @import './misc/normalize';
-@import"./views/grillartistas";
+@import './misc/mixins.scss';
 @import './partials/header';
-@import './partials/footer';
+@import './views/_home.scss';
+@import './views/artistas';
 @import './views/novedades';
 @import './views/formulario';
 @import './views/equipo';
-
-@import './views/_home.scss';
-@import './misc/mixins.scss';
+@import './partials/footer';
 @import './misc/mediaquery'
+
 
 
 

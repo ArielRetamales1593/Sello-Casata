@@ -2,70 +2,77 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Roboto:ital@1&family=Ubuntu&display=swap);
 
 
+/*Reset-*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/*General-*/
 html {
     font-size: 62.5%;
-    
+
 }
-
-
-
-
-
-
-
 
 body {
     background-image: url(../assets/img/fondo/tan-vintage-paper-texture-35.jpg);
-    font-family: 'Ubuntu', sans-serif
+
+}
+/*Titulo-*/
+h1 {
+    font-family: $font-titulo;
+    font-size: 5em;
+    text-align: center;
+    background: #ccc;
+    background: radial-gradient($color-primary, white);
+    margin-top: 9rem;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    &:hover {
+       
+        background: radial-gradient($color-hovertitulo, $color-alternative);
+      
+
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+
+
+
+
+    }
 }
 
-h1{ font-size: 4em; text-align: center; 
-    background: #ccc ;
-    background :radial-gradient($color-primary,white) ;
-  margin-top: 8rem;
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: $size-sub;
     
-    -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;   
- }
+}
 
 
 
-
+/*Parrafo-*/
 
 p {
-    font-size: 1.5em;
-    text-align:  justify;
-    
+    font-family: $font-principal;
+    font-size: $size-parrafo;
+    text-align: justify;
+
 }
 
-.titulo:hover {
-    border: outset 3px;
-}
 
+/*Bordes-*/
 %borde {
     border-radius: 15px;
     border: solid black;
     box-shadow: 10px 5px 5px gray;
 }
 
-.idea1 {
-    @extend %borde
-}
-
-.card-img-top {
-    @extend %borde
-}
-
-h2 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
 
 
 /*animaciones*/
@@ -75,8 +82,10 @@ h2 {
     animation-iteration-count: 1;
     animation-duration: 3s;
     animation-delay: 1s;
-    
+
+
 }
+
 @keyframes efecto1 {
     0% {
         transform: translate(0px);
@@ -92,86 +101,76 @@ h2 {
 }
 
 
-    .helado2 {
+.helado2 {
+    transform: translate(0px);
+    animation-name: efecto2;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+@keyframes efecto2 {
+    0% {
         transform: translate(0px);
-        animation-name: efecto2;
-        animation-iteration-count: 1;
-        animation-duration: 3s;
-        animation-delay: 5s;
     }
 
-    @keyframes efecto2 {
-        0% {
-            transform: translate(0px);
-        }
-
-        50% {
-            transform: translate(0px, -25px);
-        }
-
-        100% {
-            transform: translate(0px, -30px);
-        }
+    50% {
+        transform: translate(0px, -25px);
     }
 
+    100% {
+        transform: translate(0px, -30px);
+    }
+}
 
-    .helado3 {
+
+.helado3 {
+    transform: translate(0px);
+    animation-name: efecto3;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 10s;
+}
+
+@keyframes efecto3 {
+    0% {
         transform: translate(0px);
-        animation-name: efecto3;
-        animation-iteration-count: 1;
-        animation-duration: 3s;
-        animation-delay: 10s;
-    }
-    @keyframes efecto3 {
-        0% {
-            transform: translate(0px);
-        }
-
-        50% {
-            transform: translate(0px, -25px);
-        }
-
-        100% {
-            transform: translate(0px, -30px);
-        }
     }
 
+    50% {
+        transform: translate(0px, -25px);
+    }
+
+    100% {
+        transform: translate(0px, -30px);
+    }
+}
 
 
-    .helado4 {
+
+.helado4 {
+    transform: translate(0px);
+    animation-name: efecto4;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 15s;
+}
+
+
+
+@keyframes efecto4 {
+    0% {
         transform: translate(0px);
-        animation-name: efecto4;
-        animation-iteration-count: 1;
-        animation-duration: 3s;
-        animation-delay: 15s;
     }
 
-
-
-    @keyframes efecto4 {
-        0% {
-            transform: translate(0px);
-        }
-
-        50% {
-            transform: translate(0px, -25px);
-        }
-
-        100% {
-            transform: translate(0px, -30px);
-        }
+    50% {
+        transform: translate(0px, -25px);
     }
 
-    
-
-
-    #heladobajo {
-        margin: 8rem;
+    100% {
+        transform: translate(0px, -30px);
     }
-
-
-
-
+}
 
 
 

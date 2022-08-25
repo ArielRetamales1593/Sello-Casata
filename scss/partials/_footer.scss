@@ -1,21 +1,19 @@
-footer{ display: flex 
+/*footer-*/
 
-
-    ;
-    
-
+footer {
+    display: flex;
     flex-direction: row;
-
-
-    background-color: black;
+     background-color: black;
     justify-content: space-between;
-   
+     & .footer__logo {
+        width: 100px;
+        margin-right: auto;
+        margin-left: 3.2rem;
+        margin-top: 1rem;
+        padding: 0.5rem;
+
+    }
+
+
 
 }
-
-.footer__logo{width: 100px;
-    margin-right: auto;
-    margin-left: 3.2rem;
-    margin-top: 1rem;
-    
-    }

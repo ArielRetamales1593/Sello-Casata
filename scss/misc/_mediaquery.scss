@@ -1,3 +1,9 @@
+
+
+/*Medias-*/
+
+
+
 /*tablet -*/
 @import"./mixins";
 
@@ -18,18 +24,13 @@
 
 }
 
-@media(max-width:1000px){
+@media(max-width:1000px) {
 
-.mision{flex-direction: column;}
-
-
-
-
-
+    .mision {
+        flex-direction: column;
+    }
 
 }
-
-
 
 @media(max-width:823px) {
 
@@ -46,13 +47,8 @@
         width: 400px;
     }
 
-  
+
 }
-
-
-
-
-
 
 
 @media(max-width:789px) {
@@ -66,93 +62,124 @@
 
     }
 
-    .arthelado{margin: 5rem;}
-
-
-    .mision{flex-direction: column;}
-
-    .carouselExampleCaptions{width:600px}
-
-
-    .dj {@include flex(column, space-evenly, center) ;
-        &.dj__foto{ width:  250px}
-       
+    .arthelado {
+        margin: 5rem;
     }
 
-    
-    .eb {@include flex(column, space-evenly, center) ;
-       
+
+    .mision {
+        flex-direction: column;
     }
 
-    .eb__disco {@include flex(column, none, center) ;
-       
+    .carouselExampleCaptions {
+        width: 600px
     }
-    
-    .ff{@include flex(column, space-evenly, center) ;
-       
-    }    
 
-    .ff__disco{@include flex(column, none, center) ;
-       
-    }    
 
-    
-    .id{@include flex(column, space-evenly, center) ;
-       
-    }    
+    .dj {
+        @include flex(column, space-evenly, center);
 
-    .ib__disco{@include flex(column, space-evenly, center) ;
-       
-    }    
+        &.dj__foto {
+            width: 250px
+        }
 
-    .card-img-top{ width:250px}
+    }
+
+
+    .eb {
+        @include flex(column, space-evenly, center);
+
+    }
+
+    .eb__disco {
+        @include flex(column, none, center);
+
+    }
+
+    .ff {
+        @include flex(column, space-evenly, center);
+
+    }
+
+    .ff__disco {
+        @include flex(column, none, center);
+
+    }
+
+
+    .id {
+        @include flex(column, space-evenly, center);
+
+    }
+
+    .id__disco {
+        @include flex(column, space-evenly, center);
+
+    }
+
+    .card-img-top {
+        width: 250px
+    }
 
 
 
     .fargo {
         @include flex (column, none, center);
         margin: 5rem;
-    
-    
-    
-    
+
+
+
+
     }
-    
 
-    
-    
-    
-    .fargo__img {
+
+
+
+
+    .fargo .fargo__img {
         width: 300px
+    }
 
-  }
-  .fargo__texto2 {margin: 1rem;
-    
-
-   
-   
-  }
-
-.ideablanco__img{width: 300px;}
-
-
-  .ideablanco__texto2{margin: 1rem;}
+    .fargo .fargo__texto2 {
+        margin: 1rem;
 
 
 
 
-  .estoybien__img{width: 300px;}
+    }
+
+    .ideablanco .ideablanco__img {
+        width: 300px;
+    }
 
 
-  .estoybien__texto2{margin: 1rem;}
+    .ideablanco .ideablanco__texto2 {
+        margin: 1rem;
+    }
 
 
 
 
-.lista__foto{width: 300px;}
+    .estoybien .estoybien__img {
+        width: 300px;
+    }
 
 
-.formulario__item {margin:1rem;}
+    .estoybien .estoybien__texto2 {
+        margin: 1rem;
+    }
+
+
+
+
+    .lista .lista__foto {
+        width: 300px;
+    }
+
+
+    .formulario__item {
+        margin: 1rem;
+    }
 
 
 
@@ -163,6 +190,26 @@
 
 
 @media(max-width:575px) {
+
+    .dj .dj__foto {
+        width: 300px
+    }
+
+
+    .eb .eb__foto {
+        width: 300px;
+    }
+
+    .ff .ff__foto {
+        width: 300px;
+    }
+
+    .id .id__foto {
+        width: 300px;
+    }
+
+
+    
 
     .container {
 
@@ -181,12 +228,15 @@
     }
 
 
-    .grillaartistas{width: 100%;}
+    .grillaartistas {
+        width: 100%;
+    }
 
 
-.mision__logo{width: 250px; 
-margin-top: 5rem;
-}
+    .mision .mision__logo {
+        width: 250px;
+        margin-top: 5rem;
+    }
 
 
 }
@@ -194,22 +244,23 @@ margin-top: 5rem;
 
 
 @media(max-width:550px) {
-    
 
-    .header__nav{display:flex;
+
+    .header__nav {
+        display: flex;
         justify-content: center;
 
-       
-    
-    
-    
+
+
+
+
     }
 
 
 
-    
-    
-    
+
+
+
 
 
 }
@@ -239,29 +290,44 @@ margin-top: 5rem;
 @media(max-width:480px) {
 
 
-    .dj__foto{ width:  250px}
-    .eb__foto{width: 250px;}
-    .ff__foto{width: 250px;}
-    .id__foto{width: 250px;}
+    .dj .dj__foto {
+        width: 250px
+    }
 
-    .mision__texto{margin: 0.5rem;}
+    .eb .eb__foto {
+        width: 250px;
+    }
+
+    .ff .ff__foto {
+        width: 250px;
+    }
+
+    .id .id__foto {
+        width: 250px;
+    }
+
+    .mision__texto {
+        margin: 0.5rem;
+    }
 
 
 
 
-.header__nav{display:flex;
-    justify-content: center;
+    .header__nav {
+        display: flex;
+        justify-content: center;
 
 
 
-}
+    }
 
-.nav-item{font-size: 1,5em;
-    line-height: 0.2em;
+    .nav-item {
+        font-size: 1, 5em;
+        line-height: 0.2em;
 
 
 
-}
+    }
 
 
 
@@ -298,6 +364,15 @@ margin-top: 5rem;
 /*celular*/
 @media(max-width:480px) {
 
+    main {
+        margin: 0.2em
+    }
+
+    .header .header__nav {
+        justify-content: center;
+    }
+
+
 
 
     .nov {
@@ -333,18 +408,7 @@ margin-top: 5rem;
 }
 
 
-
-
-
-
-
-
-
-
-
-/*celular*/
 @media(max-width:400px) {
-
 
 
     .nov {
@@ -354,13 +418,14 @@ margin-top: 5rem;
 
     ul {
         flex-direction: column;
+
+
     }
 
 
-    .grillaartistas{margin-top: 100px;}
-
-
-
+    .grillaartistas {
+        margin-top: 100px;
+    }
 
 
 

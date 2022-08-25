@@ -1,27 +1,24 @@
 
-/*------------------ fontlogo-CRAYONETTE DJR------font----- Museo Sans-------
-color #498fad azul-----#86b4c8 celeste------#c2dae4 celeste claro----
-color #f95f95 rosado---- #fb94b8 rosado CLARO------#FDCADC  rosado pastel
-color # f6e050 amarill----#f9ea8a amarillo claro----#fcf5c5 amarillo pastel----------------------*/
-
+/*variables-*/
 
 $color-primary:#498fad ;
 $color-alternative:#86b4c8;
-
-/*spacing*/ 
-
-$marginpost: 5rem;
+$color-hovertitulo:#FDCADC;
 
 
 
 /*font-family*/
 
 $font-principal:'Ubuntu', sans-serif;
+$font-titulo: 'Montserrat', sans-serif;
 
 
 
 /*font-size*/
-$font-titulo: 2em; 
+$size-titulo: 5em; 
+$size-sub:2em;
+$size-parrafo: 1.5em;
+
 
 
 

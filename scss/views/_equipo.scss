@@ -1,6 +1,7 @@
 @import url(/scss/misc/_mixins.scss);
 
 
+/*equipo*/
 .equipo {
 
     @include flex(row, center, center);
@@ -8,6 +9,14 @@
     margin: 10rem;
 
 }
+
+
+///bordes
+
+.card-img-top {
+    @extend %borde
+}
+
 
 .mision {
     margin: 10rem;
@@ -41,6 +50,7 @@
     width: 300px;
     height: 250px;
     filter: brightness(50%);
+    margin: 1em;
 
     &:hover {
         filter: brightness(100%);

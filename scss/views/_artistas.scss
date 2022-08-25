@@ -1,0 +1,163 @@
+@import"../misc/mediaquery";
+@import '../misc/mixins';
+
+
+
+/*artistas-*/
+
+.galeria{
+    margin-top: 100px;
+  
+  text-align: center;
+
+}
+
+
+
+
+.arthelado {
+    margin: 10rem;
+}
+
+
+
+
+.dj {
+    @include flex(row-reverse, space-evenly, center);
+  
+    border: outset 8px;
+    @include border(gray, violet, gray, yellow);
+
+    & .dj__foto {
+        width: 40%;
+    }
+
+    & .dj__texto {
+        margin: 5rem;
+    }
+
+
+}
+
+
+.dj__disco {
+    display: flex;
+    justify-content: center
+
+    
+
+    
+}
+
+
+
+
+
+
+.eb {
+    @include flex(row, center, center);
+    border: outset 8px;
+    @include border(gold, black, white, gray);
+
+    margin-bottom: 5rem;
+
+
+    & .eb__foto {
+        width: 40%;
+    }
+
+    & .eb__texto {
+        margin: 5rem;
+    }
+
+}
+
+
+
+.eb__disco {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.eb__redes {
+    @include flex(row, center, center);
+    margin: 15rem;
+}
+
+
+
+.ff {
+    @include flex(row-reverse, center, center);
+    border: outset 8px;
+    @include border(gold, black, white, gray);
+
+    margin-bottom: 5rem;
+
+
+    & .ff__foto {
+        width: 40%;
+    }
+
+    & .ff__texto {
+        margin: 5rem;
+    }
+
+}
+
+
+.ff__disco {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.id {
+    @include flex(row, center, center);
+    border: outset 8px;
+    @include border(gold, black, white, gray);
+
+    margin-bottom: 5rem;
+
+    & .id__foto {
+        width: 40%;
+    }
+
+    & .id__texto {
+        margin: 5rem;
+    }
+
+}
+
+
+.id__disco {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+.op {
+    filter: brightness(75%);
+
+
+
+    & .op:hover {
+        filter: brightness(100%);
+    }
+}
+
+.disco {
+    text-align: center;
+}
+
+
+.casata {
+    filter: grayscale(25%);
+}

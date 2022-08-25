@@ -1,3 +1,6 @@
+
+/*Formulario*/
+
 .formulario__item {
     margin:10rem;
     font-size: 2.6em;
@@ -25,4 +28,17 @@ padding:2rem
 
 
 
+}
+
+.enviar{background-color:gray
+    ;
+    border: outset 15px;
+    
+
+    ;
+&:hover{
+    
+    border: outset 10px;
+    background-color: #FDCADC;
+}
 }
