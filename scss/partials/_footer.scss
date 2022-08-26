@@ -3,9 +3,10 @@
 footer {
     display: flex;
     flex-direction: row;
-     background-color: black;
+    background-color: black;
     justify-content: space-between;
-     & .footer__logo {
+
+    & .footer__logo {
         width: 100px;
         margin-right: auto;
         margin-left: 3.2rem;

@@ -159,7 +159,8 @@ p {
   color: white; }
 
 .nav-link {
-  color: black; }
+  color: black;
+  font-size: 15px; }
 
 ul {
   margin-top: 2rem; }
@@ -170,9 +171,6 @@ a:hover {
 .navbar {
   display: flex;
   transition: all 0.5s ease; }
-
-.nav-link {
-  font-size: 15px; }
 
 .scroll {
   height: 100px; }
@@ -214,7 +212,6 @@ a:hover {
   border: outset 2px; }
 
 /*Medias-*/
-/*tablet -*/
 @media (max-width: 1200px) {
   .grid {
     justify-items: center;
@@ -652,7 +649,6 @@ footer {
     padding: 0.5rem; }
 
 /*Medias-*/
-/*tablet -*/
 @media (max-width: 1200px) {
   .grid {
     justify-items: center;

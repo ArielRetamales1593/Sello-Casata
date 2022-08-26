@@ -17,12 +17,17 @@ html {
 
 }
 
-main{margin: 1rem};
+main {
+    margin: 1rem
+}
+
+;
 
 body {
     background-image: url(../assets/img/fondo/tan-vintage-paper-texture-35.jpg);
 
 }
+
 /*Titulo-*/
 h1 {
     font-family: $font-titulo;
@@ -36,9 +41,9 @@ h1 {
     -webkit-background-clip: text;
 
     &:hover {
-       
+
         background: radial-gradient($color-hovertitulo, $color-alternative);
-      
+
 
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
@@ -53,7 +58,7 @@ h2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: $size-sub;
-    
+
 }
 
 
@@ -173,6 +178,3 @@ p {
         transform: translate(0px, -30px);
     }
 }
-
-
-

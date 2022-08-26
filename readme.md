@@ -1,28 +1,33 @@
 <h1> Sello Casata<h1>
-<h2> Repositorio para página del "Sello Casata" <h2>
+
+ <h3 align="center">Repositorio para página del "Sello Casata</h3>
+ 
+
+
+
+<p> "Casata" Sello Discográfico y catalogo de música Chilena independiente, creado en el año 2022<p>
+
 <p>Desarrollo de página web de 5 secciones para Sello "Casata"
+
+
+
+<ul>
+  <li>Home <p> Presentación de la página <p></li>
+  <li>Artistas<p> Catalogo Musical<p> <li>
+  <li>Equipo <p>Equipo de trabajo dentro del sello <p></li>
+  <li>Novedades <p>Noticias sobre actualidad musical <p></li>
+  <li>Contacto <p>Información de contacto <p></li>
+
+</ul>
+
+
  <p>  Sello Discográfico y catalogo de música Chilena independiente, creado en el año 2022<p>
 
 
- 
- <h3 align="center">Repositorio para página del "Sello Casata</h3>
 
 
-
-
-  <p>"CASATA" Sello Discográfico y catalogo de música Chilena independiente, creado en el  año 2022. <p>
-
-  
-   <img  src="../img/casatapage.png" >
-
-
-  
-  <img  src="../img/casatapage2.png" >
-
-
-
-<h3>Autor<h3>
-<p>Ariel Retamales<p>
+<h3>Autor :<h3>
+<p>Ariel Retamales- Desarrollador Front-End<p>
 
 <h3 align="left">Conéctate conmigo:</h3>
 <p align="left"> Nretamales15@gmail.com
