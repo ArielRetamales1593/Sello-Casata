@@ -15,6 +15,9 @@
 html {
   font-size: 62.5%; }
 
+main {
+  margin: 1rem; }
+
 body {
   background-image: url(../assets/img/fondo/tan-vintage-paper-texture-35.jpg); }
 
@@ -207,7 +210,8 @@ a:hover {
 
 .btn {
   font-size: 1.9em;
-  margin-bottom: 15rem; }
+  margin-bottom: 15rem;
+  border: outset 2px; }
 
 /*Medias-*/
 /*tablet -*/
@@ -403,6 +407,9 @@ a:hover {
     margin-top: 100px; } }
 
 /*artistas-*/
+.mainartistas {
+  margin: 1em; }
+
 .galeria {
   margin-top: 100px;
   text-align: center; }
@@ -427,7 +434,8 @@ a:hover {
 
 .dj__disco {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 2rem; }
 
 .eb {
   display: flex;
