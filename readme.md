@@ -23,7 +23,7 @@
 <h3>Autor :<h3>
 <p>Ariel Retamales- Desarrollador Front-End<p>
 
-<h3 align="left">Conéctate conmigo:</h3>
+<h3 align="left">Conéctate conmigo: </h3>
 <p align="left"> Nretamales15@gmail.com
 </p>
 
