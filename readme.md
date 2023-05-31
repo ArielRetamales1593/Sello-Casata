@@ -1,15 +1,13 @@
 <h1> Sello Casata<h1>
 
  <h3 align="center">Repositorio para página del "Sello Casata</h3>
- 
-
 
 
 <p> "Casata" Sello Discográfico y catalogo de música Chilena independiente, creado en el año 2022<p>
 
 <p>Desarrollo de página web de 5 secciones para Sello "Casata"
 
-
+![Matt Cargo](./assets/img/video1.gif)
 
 <ul>
   <li>Home <p> Presentación de la página <p></li>
@@ -20,11 +18,7 @@
 
 </ul>
 
-
  <p>  Sello Discográfico y catalogo de música Chilena independiente, creado en el año 2022<p>
-
-
-
 
 <h3>Autor :<h3>
 <p>Ariel Retamales- Desarrollador Front-End<p>
